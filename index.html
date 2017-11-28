@@ -23,9 +23,22 @@ body{
   padding: 10px 10px;
 }
 
-.column-left{ float: left; width: 20%; }
+h2{
+  font-size: 12px;
+  margin: auto;
+  margin-left: 30px;
+}
+
+#colC-title{
+  text-align: center;
+  /*margin-left: 180px;*/
+  width:400px;
+  margin:auto;
+}
+
+.column-left{ float: left; width: 30%; }
 .column-right{ float: right; width: 30%; overflow: scroll;}
-.column-center{ display: inline-block; width: 50%; }
+.column-center{ display: inline-block; width: 40%; }
 
 .column-left, .column-right, .column-center{
   height: 500px;
@@ -35,6 +48,10 @@ body{
   margin-top: 20px;
   margin-left: 50px;
   margin-right: 50px;
+}
+
+svg{
+  padding-top: 20px;
 }
 
 .collection{
@@ -61,10 +78,15 @@ body{
 </br>
 <div class="container">
   <div class="column-right" id="column-right">
+    <h2 id="colR-title">List of Texts</h2>
     <ol class ="list"></ol>
   </div>
-  <div class="column-center" id="column-center"></div>
-  <div class="column-left" id="column-left"></div>
+  <div class="column-center" id="column-center">
+    <h2 id="colC-title">Relationship of Top In-text Words to Genre</h2>
+  </div>
+  <div class="column-left" id="column-left">
+    <h2 id="colL-title">Collection by Publication by Genre</h2>
+  </div>
 </div>
 </body>
 <script src="https://d3js.org/d3.v4.min.js"></script>
