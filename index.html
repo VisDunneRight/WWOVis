@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+body{
+  font-family: sans-serif;
+}
+
+.header{
+  margin-left: 50px;
+}
+
+#title{
+  font-size: 26px;
+}
+
+#info{
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.buttons{
+  margin-left:50px;
+  padding: 10px 10px;
+}
+
+.column-left{ float: left; width: 20%; }
+.column-right{ float: right; width: 30%; overflow: scroll;}
+.column-center{ display: inline-block; width: 50%; }
+
+.column-left, .column-right, .column-center{
+  height: 500px;
+}
+
+.container{
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.collection{
+  font-size: 10px;
+  margin: 10px 0;
+  line-height: 150%;
+}
+
+</style>
+<body>
+<div class="header">
+  <h1 id="title"> In the Text of Women Writers </h1>
+  <p id="info">
+    An exploration of the Women Writers Online text collection<br />
+    including the top words and phrases of the following encoded elements:
+  </p>
+</div>
+<div class="buttons">
+  <button id="btn-persName">persName</button>
+  <button id="btn-orgName">orgName</button>
+  <button id="btn-placeName">placeName</button>
+  <button id="btn-foreign">foreign</button>
+</div>
+</br>
+<div class="container">
+  <div class="column-right" id="column-right">
+    <ol class ="list"></ol>
+  </div>
+  <div class="column-center" id="column-center"></div>
+  <div class="column-left" id="column-left"></div>
+</div>
+</body>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://unpkg.com/d3-sankey@0.6"></script>
+<script src="scriptlinear.js"></script>
