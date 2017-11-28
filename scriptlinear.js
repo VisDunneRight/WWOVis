@@ -20,7 +20,7 @@ var svgL = d3.select(".column-left")
   .attr("height", hL)
   .append('g')
   .attr('class','plot')
-  .attr('transform','translate('+ m.l +','+ m.t +')');
+  .attr('transform','translate(20,20)');
 
 // var svgR = d3.select(".column-right")
 //   .append("svg")
@@ -30,8 +30,13 @@ var svgL = d3.select(".column-left")
   // .attr('class','plot')
   // .attr('transform','translate('+ m.l+','+ m.t +')');
 
-var scaleX = d3.scaleLinear().range([0, wL]);
-var scaleY = d3.scaleTime().range([hL,0]);
+var scaleX = d3.scaleOrdinal()
+  .domain(["Fiction","Non-fiction","Drama","Verse","Other"])
+  .range([(wL*0.1),(wL*0.25),(wL*0.4),(wL*0.55),(wL*0.7)]);
+var scaleY = d3.scaleTime()
+  .domain([new Date(1500,0,1), new Date(1875,0,1)])
+  .range([hL,0]);
+// var scaleX = d3.scaleLinear().range([0, wL]);
 // var scaleY = d3.scaleLinear().range([hL, 0]);
 
 var axisY = d3.axisLeft()
@@ -39,9 +44,14 @@ var axisY = d3.axisLeft()
     .ticks(d3.timeYear.every(50))
     .tickSize(0);
 
+var axisX = d3.axisTop()
+    .scale(scaleX)
+    .tickSize(0);
+
 var col1 = wC/3;
 var col2 = (wC/3)*2;
 var increment = 14;
+var redraws = 0;
 
 var curve = d3.line()
   .x(function(d){ return d.x})
@@ -51,24 +61,28 @@ var curve = d3.line()
 // buttons
 d3.select("#btn-persName")
   .on("click",function(d){
+    redraws++;
     var name = "persName";
     drawNetwork(name);
   });
 
 d3.select("#btn-orgName")
   .on("click",function(d){
+    redraws++;
     var name = "orgName";
     drawNetwork(name);
   });
 
 d3.select("#btn-placeName")
   .on("click",function(d){
+    redraws++;
     var name = "placeName";
     drawNetwork(name);
   });
 
 d3.select("#btn-foreign")
   .on("click",function(d){
+    redraws++;
     var name = "foreign";
     drawNetwork(name);
   });
@@ -195,11 +209,6 @@ function drawNetwork(name){
 
       if (error) throw error;
 
-      // scale the range of the data
-    	scaleX.domain([0,5]).range([50,wL]);
-      scaleY.domain(d3.extent(meta,function(d){return d.pubDate}));
-    	// scaleY.domain([1200, d3.max(meta, function(d) { return d.pubDate; })]).range([hL,0]);
-
       // create circles for metadata
       var dot = svgL.selectAll(".dots")
         .data(meta);
@@ -215,28 +224,36 @@ function drawNetwork(name){
         .style("opacity",.1)
         .attr("stroke", "black")
         // .attr("stroke-width", 1)
-        .attr("cx", function(d) { return scaleX(d.genreNum); })
+        .attr("cx", function(d) { return scaleX(d.genre); })
         .attr("cy", function(d) { return scaleY(d.pubDate); });
 
-      svgL.append("g")
-        .attr("id","axis-y")
-        .attr("transform", "translate(50,0)")
-        .attr("font-family","sans-serif")
-        .attr("font-size","10px")
-        .call(axisY);
-        // .call(d3.axisLeft(scaleY.domain([1200, d3.max(meta, function(d) { return d.pubDate; })]).range([hL,0])));
+      if(redraws == 1){
+        svgL.append("g")
+          .attr("id","axis-y")
+         .attr("transform", "translate(10,0)")
+          .attr("font-family","sans-serif")
+          .attr("font-size","10px")
+          .call(axisY);
 
-      svgL.append("text")
-        .attr("transform", "rotate(-90)")
-        .attr("y", 0 - m.l)
-        .attr("x", 0 - (hL / 2))
-        .attr("dy", "1em")
-        .style("text-anchor", "middle")
-        .text("Year of publication")
-        .attr("font-family","sans-serif")
-        .attr("font-size","10px");
+        svgL.append("g")
+          .attr("id","axis-x")
+          // .attr("transform", "translate(50,0)")
+          .attr("font-family","sans-serif")
+          .attr("font-size","10px")
+          .call(axisX)
+          .select(".domain")
+          .remove();;
 
-
+        // svgL.append("text")
+        //   .attr("transform", "rotate(-90)")
+        //   .attr("y", 0 - m.l)
+        //   .attr("x", 0 - (hL / 2))
+        //   .attr("dy", "1em")
+        //   .style("text-anchor", "middle")
+        //   .text("Year of publication")
+        //   .attr("font-family","sans-serif")
+        //   .attr("font-size","10px");
+      };
 
       // create array of distinct in-text element values
       var elemDist = d3.nest()
@@ -456,6 +473,8 @@ function drawNetwork(name){
   //   });
 
   // create links connecting element text and genre text
+  svgC.selectAll(".links").remove();
+
   var link = svgC.selectAll(".links")
     .data(makePath(elemTop));
 
