@@ -5,7 +5,6 @@ This visualization represents the textbase of women writers online, a collection
 Largest outstanding items:
 
 functionality
-- enter/exit/update refinement: bipartite links do not update properly and scatterplot axis re-appends with each button click.
 - interactions: incorporate mouseover and click interactions to highlight information and filter data across visualizations
 
 visualization
@@ -14,6 +13,5 @@ visualization
 - color-code genre across visualizations
 
 design
-- visualization titles
 - scatterplot genre labeling
-- descriptions of in-text elements
+- descriptions for in-text elements
