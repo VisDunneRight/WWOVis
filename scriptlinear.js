@@ -30,15 +30,15 @@ var svgL = d3.select(".column-left")
   // .attr('class','plot')
   // .attr('transform','translate('+ m.l+','+ m.t +')');
 
+// scale for scatterplot
 var scaleX = d3.scaleOrdinal()
-  .domain(["Fiction","Non-fiction","Drama","Verse","Other"])
+  .domain(["Drama","Fiction","Non-fiction","Verse","Other"])
   .range([(wL*0.1),(wL*0.25),(wL*0.4),(wL*0.55),(wL*0.7)]);
 var scaleY = d3.scaleTime()
   .domain([new Date(1500,0,1), new Date(1875,0,1)])
   .range([hL,0]);
-// var scaleX = d3.scaleLinear().range([0, wL]);
-// var scaleY = d3.scaleLinear().range([hL, 0]);
 
+// domain for scatterplot
 var axisY = d3.axisLeft()
     .scale(scaleY)
     .ticks(d3.timeYear.every(50))
@@ -52,6 +52,7 @@ var col1 = wC/3;
 var col2 = (wC/3)*2;
 var increment = 14;
 var redraws = 0;
+var name = "orgName";
 
 var curve = d3.line()
   .x(function(d){ return d.x})
@@ -62,39 +63,41 @@ var curve = d3.line()
 d3.select("#btn-persName")
   .on("click",function(d){
     redraws++;
-    var name = "persName";
+    name = "persName";
     drawNetwork(name);
   });
 
 d3.select("#btn-orgName")
   .on("click",function(d){
     redraws++;
-    var name = "orgName";
+    name = "orgName";
     drawNetwork(name);
   });
 
 d3.select("#btn-placeName")
   .on("click",function(d){
     redraws++;
-    var name = "placeName";
+    name = "placeName";
     drawNetwork(name);
   });
 
 d3.select("#btn-foreign")
   .on("click",function(d){
     redraws++;
-    var name = "foreign";
+    name = "foreign";
     drawNetwork(name);
   });
+
+drawNetwork(name);
 
 // function to make list of texts
 function makePath(data){
 
   data.forEach(function(i){
-    i.path = [{"x": i.sourceData.x - 4, "y": i.sourceData.y - 2},
-      {"x": i.sourceData.x - (wC/10), "y": i.sourceData.y - 2},
-      {"x": i.targetData.x + (wC/10), "y": i.targetData.y - 2},
-      {"x": i.targetData.x + 4, "y": i.targetData.y - 2}]
+    i.path = [{"x": i.sourceData.x - 4, "y": i.sourceData.y - 2, "element": i.element, "mainGenre": i.mainGenre},
+      {"x": i.sourceData.x - (wC/10), "y": i.sourceData.y - 2, "element": i.element, "mainGenre": i.mainGenre},
+      {"x": i.targetData.x + (wC/10), "y": i.targetData.y - 2, "element": i.element, "mainGenre": i.mainGenre},
+      {"x": i.targetData.x + 4, "y": i.targetData.y - 2, "element": i.element, "mainGenre": i.mainGenre}]
   })
   return data;
 };
@@ -125,29 +128,60 @@ function drawNetwork(name){
 
       // categorize genres
       elem.forEach(function(i){
+        if(i.pubDate == "1558-01-23"){
+          i.pubDate = "1558";
+        }
+        if(i.pubDate == "1601-11-30"){
+          i.pubDate = "1601";
+        }
+        if(i.pubDate == "1643-01-28"){
+          i.pubDate = "1643";
+        }
+        if(i.pubDate == "1760-1761"){
+          i.pubDate = "1760";
+        }
+        // i.pubDate = +i.pubDate;
+        i.pubDate = new Date(+i.pubDate,0,1);
+
           if(i.mainGenre == "G.drama" ||
             i.mainGenre == "G.drama.prose" ||
             i.mainGenre == "G.drama.verse" ||
             i.mainGenre == "G.drama.mixed"){
               i.genre = "Drama";
+              if(i.mainGenre == "G.drama"){ i.mainGenre = "Drama"; }
+              if(i.mainGenre == "G.drama.prose"){ i.mainGenre = "Drama: Prose"; }
+              if(i.mainGenre == "G.drama.verse"){ i.mainGenre = "Drama: Verse"; }
+              if(i.mainGenre == "G.drama.mixed "){ i.mainGenre = "Drama: Mixed"; }
           }
           else if(i.mainGenre == "G.non-fiction" ||
             i.mainGenre == "G.non-fiction.other" ||
             i.mainGenre == "G.non-fiction.essay" ||
             i.mainGenre == "G.non-fiction.letter"){
               i.genre = "Non-fiction";
+              if(i.mainGenre == "G.non-fiction"){ i.mainGenre = "Non-fiction"; }
+              if(i.mainGenre == "G.non-fiction.other"){ i.mainGenre = "Non-fiction: Other"; }
+              if(i.mainGenre == "G.non-fiction.essay"){ i.mainGenre = "Non-fiction: Essay"; }
+              if(i.mainGenre == "G.non-fiction.letter"){ i.mainGenre = "Non-fiction: Letter"; }
           }
           else if(i.mainGenre == "G.verse" ||
             i.mainGenre == "G.verse.lyric"||
             i.mainGenre == "G.verse.narrative" ||
             i.mainGenre == "G.verse.other"){
               i.genre = "Verse";
+              if(i.mainGenre == "G.verse"){ i.mainGenre = "Verse"; }
+              if(i.mainGenre == "G.verse.lyric"){ i.mainGenre = "Verse: Lyric"; }
+              if(i.mainGenre == "G.verse.narrative"){ i.mainGenre = "Verse: Narrative"; }
+              if(i.mainGenre == "G.verse.other"){ i.mainGenre = "Verse: Other"; }
           }
           else if(i.mainGenre == "G.fiction" ||
             i.mainGenre == "G.fiction.other"||
             i.mainGenre == "G.fiction.novel" ||
             i.mainGenre == "G.fiction.letter"){
               i.genre = "Fiction";
+              if(i.mainGenre == "G.fiction"){ i.mainGenre = "Fiction"; }
+              if(i.mainGenre == "G.fiction.other"){ i.mainGenre = "Fiction: Other"; }
+              if(i.mainGenre == "G.fiction.novel"){ i.mainGenre = "Fiction: Novel"; }
+              if(i.mainGenre == "G.fiction.letter"){ i.mainGenre = "Fiction: Letter"; }
           }
           else if(i.mainGenre == ""){
             i.mainGenre = "Other";
@@ -177,33 +211,44 @@ function drawNetwork(name){
             i.mainGenre == "G.drama.verse" ||
             i.mainGenre == "G.drama.mixed"){
               i.genre = "Drama";
-              i.genreNum = 1;
+              if(i.mainGenre == "G.drama"){ i.mainGenre = "Drama"; }
+              if(i.mainGenre == "G.drama.prose"){ i.mainGenre = "Drama: Prose"; }
+              if(i.mainGenre == "G.drama.verse"){ i.mainGenre = "Drama: Verse"; }
+              if(i.mainGenre == "G.drama.mixed "){ i.mainGenre = "Drama: Mixed"; }
           }
           else if(i.mainGenre == "G.non-fiction" ||
             i.mainGenre == "G.non-fiction.other" ||
             i.mainGenre == "G.non-fiction.essay" ||
             i.mainGenre == "G.non-fiction.letter"){
               i.genre = "Non-fiction";
-              i.genreNum = 3;
+              if(i.mainGenre == "G.non-fiction"){ i.mainGenre = "Non-fiction"; }
+              if(i.mainGenre == "G.non-fiction.other"){ i.mainGenre = "Non-fiction: Other"; }
+              if(i.mainGenre == "G.non-fiction.essay"){ i.mainGenre = "Non-fiction: Essay"; }
+              if(i.mainGenre == "G.non-fiction.letter"){ i.mainGenre = "Non-fiction: Letter"; }
           }
           else if(i.mainGenre == "G.verse" ||
             i.mainGenre == "G.verse.lyric"||
             i.mainGenre == "G.verse.narrative" ||
             i.mainGenre == "G.verse.other"){
               i.genre = "Verse";
-              i.genreNum = 4;
+              if(i.mainGenre == "G.verse"){ i.mainGenre = "Verse"; }
+              if(i.mainGenre == "G.verse.lyric"){ i.mainGenre = "Verse: Lyric"; }
+              if(i.mainGenre == "G.verse.narrative"){ i.mainGenre = "Verse: Narrative"; }
+              if(i.mainGenre == "G.verse.other"){ i.mainGenre = "Verse: Other"; }
           }
           else if(i.mainGenre == "G.fiction" ||
             i.mainGenre == "G.fiction.other"||
             i.mainGenre == "G.fiction.novel" ||
             i.mainGenre == "G.fiction.letter"){
               i.genre = "Fiction";
-              i.genreNum = 2;
+              if(i.mainGenre == "G.fiction"){ i.mainGenre = "Fiction"; }
+              if(i.mainGenre == "G.fiction.other"){ i.mainGenre = "Fiction: Other"; }
+              if(i.mainGenre == "G.fiction.novel"){ i.mainGenre = "Fiction: Novel"; }
+              if(i.mainGenre == "G.fiction.letter"){ i.mainGenre = "Fiction: Letter"; }
           }
           else if(i.mainGenre == ""){
             i.mainGenre = "Other";
             i.genre = "Other";
-            i.genreNum = 5;
           }
       });
 
@@ -227,7 +272,7 @@ function drawNetwork(name){
         .attr("cx", function(d) { return scaleX(d.genre); })
         .attr("cy", function(d) { return scaleY(d.pubDate); });
 
-      if(redraws == 1){
+      if(redraws == 0){
         svgL.append("g")
           .attr("id","axis-y")
          .attr("transform", "translate(10,0)")
@@ -253,6 +298,7 @@ function drawNetwork(name){
         //   .text("Year of publication")
         //   .attr("font-family","sans-serif")
         //   .attr("font-size","10px");
+
       };
 
       // create array of distinct in-text element values
@@ -296,6 +342,10 @@ function drawNetwork(name){
         .rollup(function(d){return d.length})
         .entries(metaTop);
 
+      metaTopGenre.sort(function(a,b){
+        return d3.ascending(a.key, b.key);
+      })
+
       // create objects connecting positions of element and genre text to link data
       var elemDistObj = {};
       var metaObj = {};
@@ -316,6 +366,8 @@ function drawNetwork(name){
   makeList(metaTop);
 
   // create text for elements
+  svgC.selectAll(".text-elem").remove();
+
   var textElem = svgC.selectAll(".text-elem")
     .data(elemDistTop);
 
@@ -326,7 +378,7 @@ function drawNetwork(name){
     .append("text")
     .attr("class","text-elem");
 
-  textElem.merge(textElemEnter)
+  textElem = textElem.merge(textElemEnter)
     .attr("x", function(d){
       d.x = col1;
       return d.x;
@@ -340,60 +392,6 @@ function drawNetwork(name){
     .attr("font-size","10px")
     .attr("text-anchor","end");
 
-  // textElem
-  //   .on("mouseover",function(d){
-  //     var metaSet = new Set();
-  //
-  //     //highlight element name
-  //     textElem
-  //       .transition()
-  //       .duration(200)
-  //       .style("opacity",function(a){
-  //         if (a.key == d.key){
-  //           return 1;
-  //         }
-  //         else { return .1; }
-  //       });
-  //
-  //     //highlight links
-  //     link
-  //       .transition()
-  //       .duration(200)
-  //       .style("opacity",function(a){
-  //         if (a.element == d.key){
-  //           metaSet.add(a.mainGenre);
-  //           return .4;
-  //         }
-  //         else { return 0; }
-  //       });
-  //
-  //     //highlight meta title
-  //     textMeta
-  //       .transition()
-  //       .duration(200)
-  //       .style("opacity",function(a){
-  //         if (metaSet.has(a.key)){
-  //           return 1;
-  //         }
-  //         else { return .1; }
-  //       });
-  //
-  //   })
-  //   .on("mouseout",function(d){
-  //     textElem
-  //       .transition()
-  //       .duration(200)
-  //       .style("opacity",1);
-  //     link
-  //       .transition()
-  //       .duration(200)
-  //       .style("opacity",.2);
-  //     textMeta
-  //       .transition()
-  //       .duration(200)
-  //       .style("opacity",1);
-  //   });
-
   // create text for genres
   var textMeta = svgC.selectAll(".text-meta")
     .data(metaTopGenre);
@@ -405,7 +403,7 @@ function drawNetwork(name){
     .append("text")
     .attr("class","text-meta");
 
-  textMeta.merge(textMetaEnter)
+  textMeta = textMeta.merge(textMetaEnter)
     .attr("x", function(d){
       d.x = col2;
       return d.x;
@@ -419,59 +417,6 @@ function drawNetwork(name){
     .attr("font-size","10px")
     .attr("text-anchor","start");
 
-  // textMeta
-  //   .on("mouseover",function(d){
-  //      var elemSet = new Set();
-  //
-  //     //highlight meta title
-  //     textMeta
-  //       .transition()
-  //       .duration(200)
-  //       .style("opacity",function(a){
-  //         if (a.key == d.key){
-  //           return 1;
-  //         }
-  //         else { return .1; }
-  //       });
-  //
-  //     //highlight links
-  //     link
-  //       .transition()
-  //       .duration(200)
-  //       .style("opacity",function(a){
-  //         if (a.mainGenre == d.key){
-  //           elemSet.add(a.element);
-  //           return .4;
-  //         }
-  //         else { return 0; }
-  //       });
-  //
-  //     //highlight element name
-  //     textElem
-  //       .transition()
-  //       .duration(200)
-  //       .style("opacity",function(a){
-  //         if (elemSet.has(a.key)){
-  //           return 1;
-  //         }
-  //         else { return .1; }
-  //       });
-  //   })
-  //   .on("mouseout",function(d){
-  //     textMeta
-  //       .transition()
-  //       .duration(200)
-  //       .style("opacity",1);
-  //     link
-  //       .transition()
-  //       .duration(200)
-  //       .style("opacity",.2);
-  //     textElem
-  //       .transition()
-  //       .duration(200)
-  //       .style("opacity",1);
-  //   });
-
   // create links connecting element text and genre text
   svgC.selectAll(".links").remove();
 
@@ -484,15 +429,120 @@ function drawNetwork(name){
     .append("g")
     .attr("class", "links")
     .datum(function(d){ return d.path; })
-    .append("path")
-    .attr("class", "link-path");
+    .append("path");
 
-  link.merge(linkEnter)
+  link = link.merge(linkEnter)
     .attr("d", curve)
     .style("stroke-width", 1)
     .style("stroke", "gray")
     .style("fill","none")
     .style("opacity",0.2);
+
+ // interactions
+ textElem
+   .on("mouseover",function(d){
+     var metaSet = new Set();
+     //highlight element name
+     textElem
+       .transition()
+       .duration(200)
+       .style("opacity",function(a){
+         if (a.key == d.key){
+           return 1;
+         }
+         else { return .1; }
+       });
+
+     //highlight links
+     link
+       .transition()
+       .duration(200)
+       .style("opacity",function(a){
+         if (a[0].element == d.key){
+           metaSet.add(a[0].mainGenre);
+           return .4;
+         }
+         else { return 0; }
+       });
+
+     //highlight meta genre
+     textMeta
+       .transition()
+       .duration(200)
+       .style("opacity",function(a){
+         if (metaSet.has(a.key)){
+           return 1;
+         }
+         else { return .1; }
+       });
+   })
+   .on("mouseout",function(d){
+     textElem
+       .transition()
+       .duration(200)
+       .style("opacity",1);
+     link
+       .transition()
+       .duration(200)
+       .style("opacity",.2);
+     textMeta
+       .transition()
+       .duration(200)
+       .style("opacity",1);
+   });
+
+  textMeta
+    .on("mouseover",function(d){
+      var elemSet = new Set();
+
+      //highlight meta genre
+      textMeta
+        .transition()
+        .duration(200)
+        .style("opacity",function(a){
+          if (a.key == d.key){
+            return 1;
+          }
+          else { return .1; }
+        });
+
+      //highlight links
+      link
+        .transition()
+        .duration(200)
+        .style("opacity",function(a){
+          if (a[0].mainGenre == d.key){
+            elemSet.add(a[0].element);
+            return .4;
+          }
+          else { return 0; }
+        });
+
+      //highlight element name
+      textElem
+        .transition()
+        .duration(200)
+        .style("opacity",function(a){
+          if (elemSet.has(d.key)){
+            return 1;
+          }
+          else { return .1; }
+        });
+    })
+    .on("mouseout",function(d){
+      textMeta
+        .transition()
+        .duration(200)
+        .style("opacity",1);
+      textElem
+        .transition()
+        .duration(200)
+        .style("opacity",1);
+      link
+        .transition()
+        .duration(200)
+        .style("opacity",.2);
+    });
 
   });
 
