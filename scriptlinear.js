@@ -523,7 +523,7 @@ function drawNetwork(name){
         .transition()
         .duration(200)
         .style("opacity",function(a){
-          if (elemSet.has(d.key)){
+          if (elemSet.has(a.key)){
             return 1;
           }
           else { return .1; }
