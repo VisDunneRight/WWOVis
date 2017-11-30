@@ -20,7 +20,7 @@ var svgL = d3.select(".column-left")
   .attr("height", hL)
   .append('g')
   .attr('class','plot')
-  .attr('transform','translate(20,20)');
+  .attr('transform','translate('+ m.l+','+ m.t +')');
 
 // var svgR = d3.select(".column-right")
 //   .append("svg")
@@ -48,11 +48,12 @@ var axisX = d3.axisTop()
     .scale(scaleX)
     .tickSize(0);
 
-var col1 = wC/3;
-var col2 = (wC/3)*2;
-var increment = 14;
-var redraws = 0;
-var name = "orgName";
+var col1 = wC/4,
+  col2 = (wC/4)*3,
+  networkHeight = hC * 0.85;
+  increment = 14,
+  redraws = 0,
+  name = "orgName";
 
 var curve = d3.line()
   .x(function(d){ return d.x})
@@ -81,24 +82,45 @@ d3.select("#btn-placeName")
     drawNetwork(name);
   });
 
-d3.select("#btn-foreign")
-  .on("click",function(d){
-    redraws++;
-    name = "foreign";
-    drawNetwork(name);
-  });
-
 drawNetwork(name);
 
 // function to make list of texts
 function makePath(data){
 
+var elemPrev, y,
+  countElem = 0,
+  countTotal = 0;
+
   data.forEach(function(i){
-    i.path = [{"x": i.sourceData.x - 4, "y": i.sourceData.y - 2, "element": i.element, "mainGenre": i.mainGenre},
-      {"x": i.sourceData.x - (wC/10), "y": i.sourceData.y - 2, "element": i.element, "mainGenre": i.mainGenre},
-      {"x": i.targetData.x + (wC/10), "y": i.targetData.y - 2, "element": i.element, "mainGenre": i.mainGenre},
-      {"x": i.targetData.x + 4, "y": i.targetData.y - 2, "element": i.element, "mainGenre": i.mainGenre}]
+
+    if(countTotal == 0){ elemPrev = i.element; }
+    else if(elemPrev !== i.element){ countElem = 0; }
+
+    increment = ((i.targetData.prop*networkHeight)/i.targetData.value) * countElem;
+
+    y = i.targetData.y + increment;
+
+    i.path = [{"x": i.sourceData.x - 4, "y": i.sourceData.y, "element": i.element, "mainGenre": i.mainGenre},
+      {"x": i.sourceData.x - (wC/10), "y": i.sourceData.y, "element": i.element, "mainGenre": i.mainGenre},
+      {"x": i.targetData.x + (wC/10), "y": y, "element": i.element, "mainGenre": i.mainGenre},
+      {"x": i.targetData.x + 4, "y": y, "element": i.element, "mainGenre": i.mainGenre}];
+
+    countElem++;
+    countTotal++;
+    elemPrev = i.element;
   })
+  // data.forEach(function(d){
+  //   var targetDataX = d.targetData.x;
+  //   var targetDataY = d.targetData.y;
+  //   var element = d.key;
+  //   d.values.forEach(function(i){
+  //     i.path = [{"x": i.sourceData.x - 4, "y": i.sourceData.y - 2, "element": element, "mainGenre": i.key},
+  //       {"x": i.sourceData.x - (wC/10), "y": i.sourceData.y - 2, "element": element, "mainGenre": i.key},
+  //       {"x": targetDataX + (wC/10), "y": targetDataY - 2, "element": element, "mainGenre": i.key},
+  //       {"x": targetDataX + 4, "y": targetDataY - 2, "element": element, "mainGenre": i.key}]
+  //   })
+  // })
+
   return data;
 };
 
@@ -254,50 +276,53 @@ function drawNetwork(name){
 
       if (error) throw error;
 
-      // create circles for metadata
-      var dot = svgL.selectAll(".dots")
-        .data(meta);
-
-      dot.exit().remove();
-
-      var dotEnter = dot.enter()
-        .append("circle")
-        .attr("class","dots");
-
-      dot.merge(dotEnter)
-        .attr("r", 4)
-        .style("opacity",.1)
-        .attr("stroke", "black")
-        // .attr("stroke-width", 1)
-        .attr("cx", function(d) { return scaleX(d.genre); })
-        .attr("cy", function(d) { return scaleY(d.pubDate); });
-
       if(redraws == 0){
+
+        // force-layout
+        var forceX = d3.forceX()
+          .x(function(d) { return scaleX(d.genre); });
+        var forceY = d3.forceY()
+          .y(function(d) { return scaleY(d.pubDate); });
+        var simulation = d3.forceSimulation()
+          .force("collide", d3.forceCollide(4) )
+          .force("forceX", forceX )
+          .force("forceY", forceY );
+
+        // create circles for metadata
+        var dot = svgL.selectAll(".dots")
+          .data(meta)
+          .enter()
+          .append("circle")
+          .attr("class","dots")
+          .attr('r', 2)
+          .attr("stroke", "black")
+          .style("opacity", 0.1)
+          .attr("cx", function(d) { return scaleX(d.genre); })
+          .attr("cy", function(d) { return scaleY(d.pubDate); });
+
+        simulation.on("tick", function() {
+          dot
+            .attr("cx", function(d) { return d.x; })
+            .attr("cy", function(d) { return d.y; });
+          })
+          .nodes(meta);
+
         svgL.append("g")
           .attr("id","axis-y")
          .attr("transform", "translate(10,0)")
           .attr("font-family","sans-serif")
           .attr("font-size","10px")
-          .call(axisY);
+          .call(axisY)
+          .select(".domain")
+          .remove();
 
         svgL.append("g")
           .attr("id","axis-x")
-          // .attr("transform", "translate(50,0)")
           .attr("font-family","sans-serif")
           .attr("font-size","10px")
           .call(axisX)
           .select(".domain")
-          .remove();;
-
-        // svgL.append("text")
-        //   .attr("transform", "rotate(-90)")
-        //   .attr("y", 0 - m.l)
-        //   .attr("x", 0 - (hL / 2))
-        //   .attr("dy", "1em")
-        //   .style("text-anchor", "middle")
-        //   .text("Year of publication")
-        //   .attr("font-family","sans-serif")
-        //   .attr("font-size","10px");
+          .remove();
 
       };
 
@@ -323,6 +348,28 @@ function drawNetwork(name){
           }
         });
         return i == 1;
+      });
+
+      elemTop.sort(function(a,b){
+        return d3.ascending(a.element, b.element);
+      });
+
+      var elemTopGrp = d3.nest()
+        .key(function(d){return d.element;})
+        .key(function(d){return d.mainGenre;})
+        .entries(elemTop);
+
+      elemTopGrp.forEach(function(d){
+        var i = 0;
+        d.values.forEach(function(a){
+          i += a.values.length;
+          a.count = a.values.length;
+        })
+        d.count = i;
+      });
+
+      elemTopGrp.sort(function(a,b){
+        return b["count"]-a["count"];
       });
 
       // filter metadata to match texts in elemTop
@@ -362,35 +409,62 @@ function drawNetwork(name){
         i.targetData = elemDistObj[i.element]
       });
 
+      elemTopGrp.forEach(function(i){
+        i.targetData = elemDistObj[i.key]
+        i.values.forEach(function(b){
+          b.sourceData = metaObj[b.key]
+        })
+      });
+
   // make the list of texts using metaTop data
   makeList(metaTop);
 
   // create text for elements
+  var ypos = 0;
+  var elemTopLength = elemTop.length;
+
   svgC.selectAll(".text-elem").remove();
+  svgC.selectAll(".rect-elem").remove();
 
   var textElem = svgC.selectAll(".text-elem")
-    .data(elemDistTop);
-
-  textElem.exit().remove();
-
-  textElemEnter = textElem.enter()
+    .data(elemDistTop)
+    .enter()
     .append("g")
+    .attr("class","text-elem")
     .append("text")
-    .attr("class","text-elem");
-
-  textElem = textElem.merge(textElemEnter)
     .attr("x", function(d){
       d.x = col1;
-      return d.x;
+      return d.x - 4;
     })
-    .attr("y",function(d,i){
-      d.y = 0+(i*increment*1.5);
-      return d.y;
+    .attr("y",function(d){
+      d.y = ypos;
+      d.prop = d.value / elemTopLength;
+      position = ypos + 5 + (d.prop*networkHeight)/2;
+      // position = ypos + (d.value/2) - 10;
+      ypos += ((d.value / elemTopLength)*networkHeight) + 2;
+      return position;
     })
     .text(function(d){return d.key})
     .attr("font-family","sans-serif")
     .attr("font-size","10px")
-    .attr("text-anchor","end");
+    .attr("text-anchor","end");;
+
+  var rectElem = svgC.selectAll(".rect-elem")
+    .data(elemDistTop)
+    .enter()
+    .append("rect")
+    .attr("class","rect-elem")
+    .attr("x",function(d){
+      return d.x;
+    })
+    .attr("y",function(d){
+      return d.y;
+    })
+    .attr("width","1px")
+    .attr("height", function(d){
+      return (d.prop*networkHeight);
+    })
+    .attr("fill","black");
 
   // create text for genres
   var textMeta = svgC.selectAll(".text-meta")
@@ -409,7 +483,7 @@ function drawNetwork(name){
       return d.x;
     })
     .attr("y",function(d,i){
-      d.y = 0+(i*increment*2);
+      d.y = i*(networkHeight/metaTopGenre.length);
       return d.y;
     })
     .text(function(d){return d.key})
@@ -421,17 +495,12 @@ function drawNetwork(name){
   svgC.selectAll(".links").remove();
 
   var link = svgC.selectAll(".links")
-    .data(makePath(elemTop));
-
-  link.exit().remove();
-
-  linkEnter = link.enter()
+    .data(makePath(elemTop))
+    .enter()
     .append("g")
-    .attr("class", "links")
+    .attr("class","links")
     .datum(function(d){ return d.path; })
-    .append("path");
-
-  link = link.merge(linkEnter)
+    .append("path")
     .attr("d", curve)
     .style("stroke-width", 1)
     .style("stroke", "gray")
@@ -439,6 +508,8 @@ function drawNetwork(name){
     .style("opacity",0.2);
 
  // interactions
+
+ // element list
  textElem
    .on("mouseover",function(d){
      var metaSet = new Set();
@@ -476,24 +547,21 @@ function drawNetwork(name){
          else { return .1; }
        });
    })
-   .on("mouseout",function(d){
-     textElem
-       .transition()
-       .duration(200)
-       .style("opacity",1);
-     link
-       .transition()
-       .duration(200)
-       .style("opacity",.2);
-     textMeta
-       .transition()
-       .duration(200)
-       .style("opacity",1);
-   });
+   .on("mouseout",mouseout);
 
+  // genre list
   textMeta
-    .on("mouseover",function(d){
-      var elemSet = new Set();
+    .on("mouseover",textMetaMouseover)
+    .on("mouseout",mouseout)
+    .on("click",function(d){
+      d3.select(this)
+        .transition()
+        .duration(200)
+        .style("font-weight","bolder");
+    });
+
+function textMetaMouseover(d){
+  var elemSet = new Set();
 
       //highlight meta genre
       textMeta
@@ -528,21 +596,21 @@ function drawNetwork(name){
           }
           else { return .1; }
         });
-    })
-    .on("mouseout",function(d){
-      textMeta
-        .transition()
-        .duration(200)
-        .style("opacity",1);
-      textElem
-        .transition()
-        .duration(200)
-        .style("opacity",1);
-      link
-        .transition()
-        .duration(200)
-        .style("opacity",.2);
-    });
+      };
+  function mouseout(d){
+    textMeta
+      .transition()
+      .duration(200)
+      .style("opacity",1);
+    textElem
+      .transition()
+      .duration(200)
+      .style("opacity",1);
+    link
+      .transition()
+      .duration(200)
+      .style("opacity",.2);
+  };
 
   });
 
