@@ -33,7 +33,7 @@ var svgL = d3.select(".column-left")
 // scale for scatterplot
 var scaleX = d3.scaleOrdinal()
   .domain(["Drama","Fiction","Non-fiction","Verse","Other"])
-  .range([(wL*0.1),(wL*0.25),(wL*0.4),(wL*0.55),(wL*0.7)]);
+  .range([10+(wL*0.1),10+(wL*0.25),10+(wL*0.4),10+(wL*0.55),10+(wL*0.7)]);
 var scaleY = d3.scaleTime()
   .domain([new Date(1500,0,1), new Date(1875,0,1)])
   .range([hL,0]);
@@ -48,8 +48,8 @@ var axisX = d3.axisTop()
     .scale(scaleX)
     .tickSize(0);
 
-var col1 = wC/4,
-  col2 = (wC/4)*3,
+var col1 = wC/5,
+  col2 = (wC/5)*4,
   networkHeight = hC * 0.85;
   increment = 14,
   redraws = 0,
@@ -109,18 +109,6 @@ var elemPrev, y,
     countTotal++;
     elemPrev = i.element;
   })
-  // data.forEach(function(d){
-  //   var targetDataX = d.targetData.x;
-  //   var targetDataY = d.targetData.y;
-  //   var element = d.key;
-  //   d.values.forEach(function(i){
-  //     i.path = [{"x": i.sourceData.x - 4, "y": i.sourceData.y - 2, "element": element, "mainGenre": i.key},
-  //       {"x": i.sourceData.x - (wC/10), "y": i.sourceData.y - 2, "element": element, "mainGenre": i.key},
-  //       {"x": targetDataX + (wC/10), "y": targetDataY - 2, "element": element, "mainGenre": i.key},
-  //       {"x": targetDataX + 4, "y": targetDataY - 2, "element": element, "mainGenre": i.key}]
-  //   })
-  // })
-
   return data;
 };
 
@@ -280,7 +268,7 @@ function drawNetwork(name){
 
         // force-layout
         var forceX = d3.forceX()
-          .x(function(d) { return scaleX(d.genre); });
+          .x(function(d) { return scaleX(d.genre)+10; });
         var forceY = d3.forceY()
           .y(function(d) { return scaleY(d.pubDate); });
         var simulation = d3.forceSimulation()
@@ -295,10 +283,31 @@ function drawNetwork(name){
           .append("circle")
           .attr("class","dots")
           .attr('r', 2)
-          .attr("stroke", "black")
+          .attr("fill", "black")
           .style("opacity", 0.1)
           .attr("cx", function(d) { return scaleX(d.genre); })
           .attr("cy", function(d) { return scaleY(d.pubDate); });
+
+        // interactions
+        dot
+         .on("mouseover",function(d){
+           d3.select(this)
+             .transition()
+             .duration(100)
+             .style("fill","black")
+             .style("stroke","black")
+             .style("stroke-width","4px")
+             .style("opacity",1);
+         })
+         .on("mouseout",function(d){
+           dot
+             .transition()
+             .duration(100)
+             .style("fill", "black")
+             .style("stroke","none")
+             .style("stroke-width","0px")
+             .style("opacity", 0.1);
+         });
 
         simulation.on("tick", function() {
           dot
@@ -309,7 +318,7 @@ function drawNetwork(name){
 
         svgL.append("g")
           .attr("id","axis-y")
-         .attr("transform", "translate(10,0)")
+          .attr("transform", "translate(20,0)")
           .attr("font-family","sans-serif")
           .attr("font-size","10px")
           .call(axisY)
@@ -318,6 +327,7 @@ function drawNetwork(name){
 
         svgL.append("g")
           .attr("id","axis-x")
+          .attr("transform", "translate(10,10)")
           .attr("font-family","sans-serif")
           .attr("font-size","10px")
           .call(axisX)
@@ -350,26 +360,16 @@ function drawNetwork(name){
         return i == 1;
       });
 
+      // elemTop.sort(function(a,b){
+      //   return d3.ascending(a.mainGenre, b.mainGenre);
+      // });
+
+      elemTop.sort(function(a,b){
+        return b["pubDate"]-a["pubDate"];
+      });
+
       elemTop.sort(function(a,b){
         return d3.ascending(a.element, b.element);
-      });
-
-      var elemTopGrp = d3.nest()
-        .key(function(d){return d.element;})
-        .key(function(d){return d.mainGenre;})
-        .entries(elemTop);
-
-      elemTopGrp.forEach(function(d){
-        var i = 0;
-        d.values.forEach(function(a){
-          i += a.values.length;
-          a.count = a.values.length;
-        })
-        d.count = i;
-      });
-
-      elemTopGrp.sort(function(a,b){
-        return b["count"]-a["count"];
       });
 
       // filter metadata to match texts in elemTop
@@ -409,13 +409,6 @@ function drawNetwork(name){
         i.targetData = elemDistObj[i.element]
       });
 
-      elemTopGrp.forEach(function(i){
-        i.targetData = elemDistObj[i.key]
-        i.values.forEach(function(b){
-          b.sourceData = metaObj[b.key]
-        })
-      });
-
   // make the list of texts using metaTop data
   makeList(metaTop);
 
@@ -446,7 +439,7 @@ function drawNetwork(name){
     })
     .text(function(d){return d.key})
     .attr("font-family","sans-serif")
-    .attr("font-size","10px")
+    .attr("font-size","8px")
     .attr("text-anchor","end");;
 
   var rectElem = svgC.selectAll(".rect-elem")
@@ -484,11 +477,11 @@ function drawNetwork(name){
     })
     .attr("y",function(d,i){
       d.y = i*(networkHeight/metaTopGenre.length);
-      return d.y;
+      return d.y+2;
     })
     .text(function(d){return d.key})
     .attr("font-family","sans-serif")
-    .attr("font-size","10px")
+    .attr("font-size","8px")
     .attr("text-anchor","start");
 
   // create links connecting element text and genre text
@@ -505,7 +498,7 @@ function drawNetwork(name){
     .style("stroke-width", 1)
     .style("stroke", "gray")
     .style("fill","none")
-    .style("opacity",0.2);
+    .style("opacity",0.1);
 
  // interactions
 
@@ -513,8 +506,18 @@ function drawNetwork(name){
  textElem
    .on("mouseover",function(d){
      var metaSet = new Set();
-     //highlight element name
+     //highlight element
      textElem
+       .transition()
+       .duration(200)
+       .style("opacity",function(a){
+         if (a.key == d.key){
+           return 1;
+         }
+         else { return .1; }
+       });
+
+      rectElem
        .transition()
        .duration(200)
        .style("opacity",function(a){
@@ -531,7 +534,7 @@ function drawNetwork(name){
        .style("opacity",function(a){
          if (a[0].element == d.key){
            metaSet.add(a[0].mainGenre);
-           return .4;
+           return .1;
          }
          else { return 0; }
        });
@@ -581,12 +584,12 @@ function textMetaMouseover(d){
         .style("opacity",function(a){
           if (a[0].mainGenre == d.key){
             elemSet.add(a[0].element);
-            return .4;
+            return .1;
           }
           else { return 0; }
         });
 
-      //highlight element name
+      //highlight element
       textElem
         .transition()
         .duration(200)
@@ -596,13 +599,28 @@ function textMetaMouseover(d){
           }
           else { return .1; }
         });
+
+      rectElem
+        .transition()
+        .duration(200)
+        .style("opacity",function(a){
+          if (elemSet.has(a.key)){
+            return 1;
+          }
+          else { return .1; }
+        });
       };
+
   function mouseout(d){
     textMeta
       .transition()
       .duration(200)
       .style("opacity",1);
     textElem
+      .transition()
+      .duration(200)
+      .style("opacity",1);
+    rectElem
       .transition()
       .duration(200)
       .style("opacity",1);

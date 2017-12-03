@@ -41,10 +41,15 @@ h2{
 }
 
 .column-left{ float: left; width: 30%; }
-.column-right{ float: right; width: 30%; overflow: scroll;}
+.column-right{ float: right; width: 30%; }
 .column-center{ display: inline-block; width: 40%; }
 
-.column-left, .column-right, .column-center{
+.column-left, .column-center{
+  height: 500px;
+}
+
+.column-right ol{
+  overflow: scroll;
   height: 500px;
 }
 
@@ -63,6 +68,21 @@ svg{
   margin: 10px 0;
   line-height: 150%;
 }
+
+ol::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+ol::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+/*.selectedItem{
+	color: #232066;
+	font-weight: bold;
+}*/
 
 </style>
 <body>
@@ -94,4 +114,8 @@ svg{
 </body>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://unpkg.com/d3-sankey@0.6"></script>
-<script src="scriptlinear.js"></script>
+<!-- <script src="scriptlinear.js"></script> -->
+<script src="data.js"></script>
+<script src="scatterplot.js"></script>
+<script src="network.js"></script>
+<script src="list.js"></script>
