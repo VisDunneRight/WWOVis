@@ -14,13 +14,13 @@ dispatch.on("dataLoaded.list", function(meta, metaTop, metaTopGenre, elemDistTop
 
   listEnter = list.enter()
     .append('li')
-    .attr("class","collection")
+    .attr("class","collection");
+
+  list.merge(listEnter)
+    .html(function(d){ return "<b>Title:</b> " + d.title + " <br> <b>Author:</b> " + d.author})
     .attr("id", function(d){ return d.filename })
     .style("color", function(d) {return scaleColor(d.genre); })
     .style("opacity", 0.8);
-
-  list.merge(listEnter)
-    .html(function(d){ return "<b>Title:</b> " + d.title + " <br> <b>Author:</b> " + d.author});
 
   var i = 0;
   d3.selectAll(".collection")
