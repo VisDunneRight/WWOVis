@@ -1,6 +1,5 @@
 var dispatch = d3.dispatch("dataLoaded",
-  "highlight","highlightmeta","highlightelem","unhighlight",
-  "filterlist");
+  "highlight","highlightmeta","highlightelem","unhighlight");
 
 var name = "orgName";
 var redraws = 0;
@@ -63,7 +62,7 @@ function drawNetwork(name){
                 if(i.mainGenre == "G.drama"){ i.mainGenre = "Drama"; }
                 if(i.mainGenre == "G.drama.prose"){ i.mainGenre = "Drama: Prose"; }
                 if(i.mainGenre == "G.drama.verse"){ i.mainGenre = "Drama: Verse"; }
-                if(i.mainGenre == "G.drama.mixed "){ i.mainGenre = "Drama: Mixed"; }
+                if(i.mainGenre == "G.drama.mixed"){ i.mainGenre = "Drama: Mixed"; }
             }
             else if(i.mainGenre == "G.non-fiction" ||
               i.mainGenre == "G.non-fiction.other" ||
@@ -115,7 +114,6 @@ function drawNetwork(name){
             if(i.pubDate == "1760-1761"){
               i.pubDate = "1760";
             }
-            // i.pubDate = +i.pubDate;
             i.pubDate = new Date(+i.pubDate,0,1);
 
             if(i.mainGenre == "G.drama" ||
@@ -126,7 +124,7 @@ function drawNetwork(name){
                 if(i.mainGenre == "G.drama"){ i.mainGenre = "Drama"; }
                 if(i.mainGenre == "G.drama.prose"){ i.mainGenre = "Drama: Prose"; }
                 if(i.mainGenre == "G.drama.verse"){ i.mainGenre = "Drama: Verse"; }
-                if(i.mainGenre == "G.drama.mixed "){ i.mainGenre = "Drama: Mixed"; }
+                if(i.mainGenre == "G.drama.mixed"){ i.mainGenre = "Drama: Mixed"; }
             }
             else if(i.mainGenre == "G.non-fiction" ||
               i.mainGenre == "G.non-fiction.other" ||
@@ -164,103 +162,103 @@ function drawNetwork(name){
             }
         });
 
-        // create array of distinct in-text element values
-        var elemDist = d3.nest()
-          .key(function(d){return d.element})
-          .rollup(function(d){return d.length})
-          .entries(elem);
+      // create array of distinct in-text element values
+      var elemDist = d3.nest()
+        .key(function(d){return d.element})
+        .rollup(function(d){return d.length})
+        .entries(elem);
 
-        elemDist.sort(function(a,b){
-            return b["value"]-a["value"];
-          });
-
-        // take top 20 distinct in-text element values
-        var elemDistTop = elemDist.slice(0,21);
-
-        // filter element data to match elements in elemDistTop
-        var elemTop = elem.filter(function(d){
-          var i = 0;
-          elemDistTop.forEach(function(a){
-            if(a.key == d.element){
-              i = 1;
-            }
-          });
-          return i == 1;
+      elemDist.sort(function(a,b){
+          return b["value"]-a["value"];
         });
 
-        // elemTop.sort(function(a,b){
-        //   return d3.ascending(a.mainGenre, b.mainGenre);
-        // });
+      // take top 20 distinct in-text element values
+      var elemDistTop = elemDist.slice(0,21);
 
-        elemTop.sort(function(a,b){
-          return b["pubDate"]-a["pubDate"];
-        });
-
-        elemTop.sort(function(a,b){
-          return d3.ascending(a.element, b.element);
-        });
-
-        // filter metadata to match texts in elemTop
-        meta.forEach(function(d){
-          elemTop.forEach(function(a){
-            if(a.filename == d.filename){
-              d.isTop = 1;
-            }
-          });
-          if(d.isTop == 1){ }
-          else{d.isTop = 0; }
-        });
-
-        var metaTop = meta.filter(function(d){
-          return d.isTop == 1;
-        });
-
-        metaTop.sort(function(a,b){
-          if (a.title < b.title){
-            return -1;
-          }
-          else if (a.title > b.title){
-            return 1;
-          }
-          else{ return 0; }
-        });
-
-        // var metaTop = meta.filter(function(d){
-        //   var i = 0;
-        //   elemTop.forEach(function(a){
-        //     if(a.filename == d.filename){
-        //       i = 1;
-        //     }
-        //   });
-        //   return i == 1;
-        // });
-
-
-        // create array of distinct genre values
-        var metaTopGenre = d3.nest()
-          .key(function(d){ return d.mainGenre })
-          .rollup(function(d){return d.length})
-          .entries(metaTop);
-
-        metaTopGenre.sort(function(a,b){
-          return d3.ascending(a.key, b.key);
-        })
-
-        // create objects connecting positions of element and genre text to link data
-        var elemDistObj = {};
-        var metaObj = {};
+      // filter element data to match elements in elemDistTop
+      var elemTop = elem.filter(function(d){
+        var i = 0;
         elemDistTop.forEach(function(a){
-          elemDistObj[a.key] = a
+          if(a.key == d.element){
+            i = 1;
+          }
         });
+        return i == 1;
+      });
 
-        metaTopGenre.forEach(function(a){
-          metaObj[a.key] = a
-        });
+      // elemTop.sort(function(a,b){
+      //   return d3.ascending(a.mainGenre, b.mainGenre);
+      // });
 
-        elemTop.forEach(function(i){
-          i.sourceData = metaObj[i.mainGenre]
-          i.targetData = elemDistObj[i.element]
+      elemTop.sort(function(a,b){
+        return b["pubDate"]-a["pubDate"];
+      });
+
+      elemTop.sort(function(a,b){
+        return d3.ascending(a.element, b.element);
+      });
+
+      // filter metadata to match texts in elemTop
+      meta.forEach(function(d){
+        elemTop.forEach(function(a){
+          if(a.filename == d.filename){
+            d.isTop = 1;
+          }
         });
+        if(d.isTop == 1){ }
+        else{d.isTop = 0; }
+      });
+
+      var metaTop = meta.filter(function(d){
+        return d.isTop == 1;
+      });
+
+      metaTop.sort(function(a,b){
+        if (a.title < b.title){
+          return -1;
+        }
+        else if (a.title > b.title){
+          return 1;
+        }
+        else{ return 0; }
+      });
+
+      // var metaTop = meta.filter(function(d){
+      //   var i = 0;
+      //   elemTop.forEach(function(a){
+      //     if(a.filename == d.filename){
+      //       i = 1;
+      //     }
+      //   });
+      //   return i == 1;
+      // });
+
+
+      // create array of distinct genre values
+      var metaTopGenre = d3.nest()
+        .key(function(d){ return d.mainGenre })
+        .rollup(function(d){return d.length})
+        .entries(metaTop);
+
+      metaTopGenre.sort(function(a,b){
+        return d3.ascending(a.key, b.key);
+      })
+
+      // create objects connecting positions of element and genre text to link data
+      var elemDistObj = {};
+      var metaObj = {};
+      elemDistTop.forEach(function(a){
+        elemDistObj[a.key] = a
+      });
+
+      metaTopGenre.forEach(function(a){
+        metaObj[a.key] = a
+      });
+
+      elemTop.forEach(function(i){
+        i.sourceData = metaObj[i.mainGenre]
+        i.targetData = elemDistObj[i.element]
+      });
 
       dispatch.call("dataLoaded", null, meta, metaTop, metaTopGenre, elemDistTop, elemTop);
 

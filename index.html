@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
+
+html{
+  background-color: #1E1E1E;
+  height: 100vh;
+}
+
 body{
   font-family: sans-serif;
 }
 
 .header{
   margin-left: 50px;
+  padding: 10px;
+  color: white;
+}
+
+#info{
+font-weight: lighter;
+}
+
+button{
+  cursor: pointer;
 }
 
 #title{
@@ -40,27 +56,38 @@ h2{
   margin:auto;
 }
 
-.column-left{ float: left; width: 30%; }
-.column-right{ float: right; width: 30%; }
-.column-center{ display: inline-block; width: 40%; }
+#colR-title{
+  margin-bottom: 5px;
+}
 
-.column-left, .column-center{
+#column-left{ float: left; width: 30%; }
+#column-right{ float: right; width: 20%; }
+#column-center{ display: inline-block; width: 50%; }
+
+#column-left, #column-center{
   height: 500px;
 }
 
-.column-right ol{
+#column-right ol{
   overflow: scroll;
   height: 500px;
 }
 
 .container{
-  margin-top: 20px;
+  /*margin-top: 20px;
   margin-left: 50px;
-  margin-right: 50px;
+  margin-right: 50px;*/
+  padding: 50px;
+  color:white;
+  font-weight: lighter;
 }
 
 svg{
   padding-top: 20px;
+}
+
+.axisColor text{
+  fill: white;
 }
 
 .collection{
@@ -94,27 +121,25 @@ ol::-webkit-scrollbar-thumb {
   </p>
 </div>
 <div class="buttons">
-  <button id="btn-persName">person names</button>
-  <button id="btn-orgName">organization names</button>
-  <button id="btn-placeName">place names</button>
+  <button id="btn-persName" type="button" class="btn-outline-primary">person names</button>
+  <button id="btn-orgName" type="button" class="btn-outline-primary">organization names</button>
+  <button id="btn-placeName" type="button" class="btn-outline-primary">place names</button>
 </div>
 </br>
 <div class="container">
-  <div class="column-right" id="column-right">
+  <div class="button" id="column-right">
     <h2 id="colR-title">List of Texts</h2>
     <ol class ="list"></ol>
   </div>
-  <div class="column-center" id="column-center">
+  <div class="button" id="column-center">
     <h2 id="colC-title">Relationship of Top In-text Words to Genre</h2>
   </div>
-  <div class="column-left" id="column-left">
-    <h2 id="colL-title">Collection by Publication by Genre</h2>
+  <div class="button" id="column-left">
+    <h2 id="colL-title">Collection by Pub Year by Genre</h2>
   </div>
 </div>
 </body>
 <script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="https://unpkg.com/d3-sankey@0.6"></script>
-<!-- <script src="scriptlinear.js"></script> -->
 <script src="data.js"></script>
 <script src="scatterplot.js"></script>
 <script src="network.js"></script>

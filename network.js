@@ -2,7 +2,7 @@ var m = {t:10,r:10,b:10,l:10},
     wC = document.getElementById("column-center").clientWidth - m.l - m.r,
     hC = document.getElementById("column-center").clientHeight - m.t - m.b;
 
-var svgC = d3.select(".column-center")
+var svgC = d3.select("#column-center")
   .append("svg")
   .attr("width", wC)
   .attr("height", hC)
@@ -18,6 +18,12 @@ var curve = d3.line()
   .x(function(d){ return d.x})
   .y(function(d){ return d.y})
   .curve(d3.curveBundle.beta(0.85));
+
+// color scale for curves
+var scaleColor2 = d3.scaleOrdinal()
+      .domain(["Drama", "Drama: Prose", "Drama: Verse", "Fiction", "Fiction: Letter", "Fiction: Novel", "Fiction: Other", "Non-fiction", "Non-fiction: Essay", "Non-fiction: Letter", "Non-fiction: Other", "Verse", "Verse: Lyric", "Verse: Narrative", "Verse: Other","Other"])
+      .range(["#D81B60", "#D81B60", "#D81B60", "#BA68C8", "#BA68C8", "#BA68C8", "#BA68C8", "#03A9F4", "#03A9F4", "#03A9F4", "#03A9F4", "#CDDC39", "#CDDC39", "#CDDC39", "#CDDC39", "#00E676"]);
+
 
 // function to make list of texts
 function makePath(data){
@@ -35,10 +41,10 @@ function makePath(data){
 
     y = i.targetData.y + increment;
 
-    i.path = [{"x": i.sourceData.x - 4, "y": i.sourceData.y, "element": i.element, "mainGenre": i.mainGenre},
-      {"x": i.sourceData.x - (wC/10), "y": i.sourceData.y, "element": i.element, "mainGenre": i.mainGenre},
-      {"x": i.targetData.x + (wC/10), "y": y, "element": i.element, "mainGenre": i.mainGenre},
-      {"x": i.targetData.x + 4, "y": y, "element": i.element, "mainGenre": i.mainGenre}];
+    i.path = [{"x": i.sourceData.x - 4, "y": i.sourceData.y, "filename": i.filename, "element": i.element, "mainGenre": i.mainGenre},
+      {"x": i.sourceData.x - (wC/10), "y": i.sourceData.y, "filename": i.filename, "element": i.element, "mainGenre": i.mainGenre},
+      {"x": i.targetData.x + (wC/10), "y": y, "filename": i.filename, "element": i.element, "mainGenre": i.mainGenre},
+      {"x": i.targetData.x + 4, "y": y, "filename": i.filename, "element": i.element, "mainGenre": i.mainGenre}];
 
     countElem++;
     countTotal++;
@@ -79,7 +85,8 @@ dispatch.on("dataLoaded.network",function(meta, metaTop, metaTopGenre, elemDistT
     .text(function(d){return d.key})
     .attr("font-family","sans-serif")
     .attr("font-size","8px")
-    .attr("text-anchor","end");;
+    .attr("text-anchor","end")
+    .attr("fill","white");
 
   var rectElem = svgC.selectAll(".rect-elem")
     .data(elemDistTop)
@@ -96,7 +103,7 @@ dispatch.on("dataLoaded.network",function(meta, metaTop, metaTopGenre, elemDistT
     .attr("height", function(d){
       return (d.prop*networkHeight);
     })
-    .attr("fill","black");
+    .attr("fill","white");
 
   // create text for genres
   var textMeta = svgC.selectAll(".text-meta")
@@ -121,13 +128,17 @@ dispatch.on("dataLoaded.network",function(meta, metaTop, metaTopGenre, elemDistT
     .text(function(d){return d.key})
     .attr("font-family","sans-serif")
     .attr("font-size","8px")
-    .attr("text-anchor","start");
+    .attr("text-anchor","start")
+    .attr("fill", function(d){return scaleColor2(d.key)});
 
   // create links connecting element text and genre text
+  elemTop = makePath(elemTop);
+  console.log(elemTop);
+
   svgC.selectAll(".links").remove();
 
   var link = svgC.selectAll(".links")
-    .data(makePath(elemTop))
+    .data(elemTop)
     .enter()
     .append("g")
     .attr("class","links")
@@ -138,7 +149,7 @@ dispatch.on("dataLoaded.network",function(meta, metaTop, metaTopGenre, elemDistT
     // .duration(500)
     .attr("d", curve)
     .style("stroke-width", 1)
-    .style("stroke", "gray")
+    .style("stroke", function(d){return scaleColor2(d[0].mainGenre); })
     .style("fill","none")
     .style("opacity",0.1);
 
@@ -146,7 +157,8 @@ dispatch.on("dataLoaded.network",function(meta, metaTop, metaTopGenre, elemDistT
   textElem
     .on("mouseover",function(d){
       clicked = 0;
-      dispatch.call("highlightelem",this,d);
+      var i = 0;
+      dispatch.call("highlightelem",this,d,i);
     })
     .on("mouseout", function(d){
       if(clicked == 0){
@@ -155,14 +167,15 @@ dispatch.on("dataLoaded.network",function(meta, metaTop, metaTopGenre, elemDistT
     })
     .on("click",function(d){
       clicked = 1;
-      dispatch.call("highlightelem",this,d);
-      dispatch.call("filterlist",this,d);
+      var i = 0;
+      dispatch.call("highlightelem",this,d,i);
     });
 
    textMeta
      .on("mouseover", function(d){
        clicked = 0;
-       dispatch.call("highlightmeta",this,d);
+       var i = 0;
+       dispatch.call("highlightmeta",this,d,i);
      })
      .on("mouseout", function(d){
        if(clicked == 0){
@@ -171,12 +184,13 @@ dispatch.on("dataLoaded.network",function(meta, metaTop, metaTopGenre, elemDistT
      })
      .on("click", function(d){
        clicked = 1;
+       var i = 0;
        // d3.select(this)
        //   .transition()
        //   .duration(200)
        //   .style("font-weight","bolder");
-      dispatch.call("highlightmeta",this,d);
-      dispatch.call("filterlist",this,d);
+      dispatch.call("highlightmeta",this,d,i);
+      // dispatch.call("filterlistmeta",this,d);
      });
 
 });
@@ -213,7 +227,7 @@ dispatch.on("highlightelem", function(d){
     .style("opacity",function(a){
       if (a[0].element == d.key){
         metaSet.add(a[0].mainGenre);
-        return .1;
+        return .2;
       }
       else { return 0; }
     });
@@ -252,7 +266,7 @@ dispatch.on("highlightmeta", function(d){
     .style("opacity",function(a){
       if (a[0].mainGenre == d.key){
         elemSet.add(a[0].element);
-        return .1;
+        return .2;
       }
       else { return 0; }
     });
@@ -277,6 +291,57 @@ dispatch.on("highlightmeta", function(d){
       }
       else { return .1; }
     });
+});
+
+dispatch.on("highlight.network",function(d){
+  var elemSet = new Set();
+  var metaSet = new Set();
+
+  //highlight links
+  svgC.selectAll(".path-links")
+    .transition()
+    .duration(200)
+    .style("opacity",function(a){
+      if (a[0].filename == d.filename){
+        elemSet.add(a[0].element);
+        metaSet.add(a[0].mainGenre);
+        return .2;
+      }
+      else { return 0; }
+    });
+
+  //highlight element
+  svgC.selectAll(".text-elem")
+    .transition()
+    .duration(200)
+    .style("opacity",function(a){
+      if (elemSet.has(a.key)){
+        return 1;
+      }
+      else { return .1; }
+    });
+
+  svgC.selectAll(".rect-elem")
+    .transition()
+    .duration(200)
+    .style("opacity",function(a){
+      if (elemSet.has(a.key)){
+        return 1;
+      }
+      else { return .1; }
+    });
+
+  //highlight meta genre
+  svgC.selectAll(".text-meta")
+    .transition()
+    .duration(200)
+    .style("opacity",function(a){
+      if (metaSet.has(a.key)){
+        return 1;
+      }
+      else { return .1; }
+    });
+
 });
 
 dispatch.on("unhighlight.network",function(){
