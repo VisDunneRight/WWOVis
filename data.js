@@ -173,7 +173,7 @@ function drawNetwork(name){
         });
 
       // take top 20 distinct in-text element values
-      var elemDistTop = elemDist.slice(0,21);
+      var elemDistTop = elemDist.slice(0,20);
 
       // filter element data to match elements in elemDistTop
       var elemTop = elem.filter(function(d){

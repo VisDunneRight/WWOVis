@@ -21,8 +21,8 @@ var curve = d3.line()
 
 // color scale for curves
 var scaleColor2 = d3.scaleOrdinal()
-      .domain(["Drama", "Drama: Prose", "Drama: Verse", "Fiction", "Fiction: Letter", "Fiction: Novel", "Fiction: Other", "Non-fiction", "Non-fiction: Essay", "Non-fiction: Letter", "Non-fiction: Other", "Verse", "Verse: Lyric", "Verse: Narrative", "Verse: Other","Other"])
-      .range(["#D81B60", "#D81B60", "#D81B60", "#BA68C8", "#BA68C8", "#BA68C8", "#BA68C8", "#03A9F4", "#03A9F4", "#03A9F4", "#03A9F4", "#CDDC39", "#CDDC39", "#CDDC39", "#CDDC39", "#00E676"]);
+      .domain(["Drama", "Drama: Prose", "Drama: Verse", "Fiction", "Fiction: Letter", "Fiction: Novel", "Fiction: Other", "Non-fiction", "Non-fiction: Essay", "Non-fiction: Letter", "Non-fiction: Other", "Verse", "Verse: Lyric", "Verse: Narrative", "Verse: Other"])
+      .range(["#EC407A", "#EC407A", "#EC407A", "#BA68C8", "#BA68C8", "#BA68C8", "#BA68C8", "#03A9F4", "#03A9F4", "#03A9F4", "#03A9F4", "#00E676", "#00E676", "#00E676", "#00E676"]);
 
 
 // function to make list of texts
@@ -122,7 +122,7 @@ dispatch.on("dataLoaded.network",function(meta, metaTop, metaTopGenre, elemDistT
       return d.x;
     })
     .attr("y",function(d,i){
-      d.y = i*(networkHeight/metaTopGenre.length);
+      d.y = (i+1)*(networkHeight/metaTopGenre.length);
       return d.y+2;
     })
     .text(function(d){return d.key})
@@ -133,7 +133,6 @@ dispatch.on("dataLoaded.network",function(meta, metaTop, metaTopGenre, elemDistT
 
   // create links connecting element text and genre text
   elemTop = makePath(elemTop);
-  console.log(elemTop);
 
   svgC.selectAll(".links").remove();
 

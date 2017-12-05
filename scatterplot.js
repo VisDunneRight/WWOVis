@@ -12,16 +12,17 @@ var svgL = d3.select("#column-left")
 
 // scale for scatterplot
 var scaleX = d3.scaleOrdinal()
-  .domain(["Drama","Fiction","Non-fiction","Verse","Other"])
-  .range([10+(wL*0.1),10+(wL*0.25),10+(wL*0.4),10+(wL*0.55),10+(wL*0.7)]);
+  .domain(["Drama","Fiction","Non-fiction","Verse"])
+  .range([10+(wL*0.1),10+(wL*0.3),10+(wL*0.5),10+(wL*0.7)]);
 
 var scaleY = d3.scaleTime()
   .domain([new Date(1500,0,1), new Date(1875,0,1)])
   .range([hL,0]);
 
 var scaleColor = d3.scaleOrdinal()
-      .domain(["Drama","Fiction","Non-fiction","Verse","Other"])
-      .range(["#D81B60", "#BA68C8", "#03A9F4", "#CDDC39", "#00E676"]);
+      .domain(["Drama","Fiction","Non-fiction","Verse"])
+      .range(["#EC407A", "#BA68C8", "#03A9F4", "#00E676"]);
+        // 400 pink, 300 purple, 500 light blue, A400 green
 
 // domain for scatterplot
 var axisY = d3.axisLeft()
