@@ -102,7 +102,7 @@ bath.poems.xml,"Poems on Various Occasions, 1806","Bath, Elizabeth",London,1806,
 behn.emperor.xml,"The Emperor of the Moon, 1688","Behn, Aphra",London,1688,G.drama,Majesties Servants,Majesties Servants
 behn.emperor.xml,"The Emperor of the Moon, 1688","Behn, Aphra",London,1688,G.drama,Rosicrucian Order,Rosicrucian Order
 behn.emperor.xml,"The Emperor of the Moon, 1688","Behn, Aphra",London,1688,G.drama,Rosicrucian,Rosicrucian
-behn.loverwatch.xml,"La Montre: or The Loveró»s Watch, 1686","Behn, Aphra",London,1686,G.fiction,Honourable Society of the Inner-Temple,Honourable Society of the Inner-Temple
+behn.loverwatch.xml,"La Montre: or The Lover—Ès Watch, 1686","Behn, Aphra",London,1686,G.fiction,Honourable Society of the Inner-Temple,Honourable Society of the Inner-Temple
 behn.nun.xml,"History of the Nun, 1689","Behn, Aphra",London,1689,G.fiction,Order of St Augustine,Order of St Augustine
 behn.nun.xml,"History of the Nun, 1689","Behn, Aphra",London,1689,G.fiction,Royal Society,Royal Society
 behn.widow.xml,"The Widow Ranter, 1690","Behn, Aphra",London,1690,G.drama,their Majesties Servants,their Majesties Servants
@@ -111,9 +111,9 @@ behn.widow.xml,"The Widow Ranter, 1690","Behn, Aphra",London,1690,G.drama,Their 
 bradstreet.tenthmuse.xml,"The Tenth Muse, 1650","Bradstreet, Anne (Dudley)",London,1650,G.verse,Parliament,Parliament
 brooke.emily.xml,"The History of Emily Montague, 1769","Brooke, Frances (Moore)",London,1769,G.fiction,Ursulines,Ursulines
 brooke.emily.xml,"The History of Emily Montague, 1769","Brooke, Frances (Moore)",London,1769,G.fiction,church of England,Church of England
-brooks.zophiel1834.xml,"Zí_phi‚l; or, the Bride of Seven, 1834","Brooks, Maria (Gowen)",Boston,1834,G.verse,Polish Committee,Polish Committee
-brooks.zophiel1834.xml,"Zí_phi‚l; or, the Bride of Seven, 1834","Brooks, Maria (Gowen)",Boston,1834,G.verse,Messrs Hilliard Gray & Co,Messrs Hilliard Gray & Co
-brooks.zophiel1834.xml,"Zí_phi‚l; or, the Bride of Seven, 1834","Brooks, Maria (Gowen)",Boston,1834,G.verse,Royal Society,Royal Society
+brooks.zophiel1834.xml,"Z’_phiâl; or, the Bride of Seven, 1834","Brooks, Maria (Gowen)",Boston,1834,G.verse,Polish Committee,Polish Committee
+brooks.zophiel1834.xml,"Z’_phiâl; or, the Bride of Seven, 1834","Brooks, Maria (Gowen)",Boston,1834,G.verse,Messrs Hilliard Gray & Co,Messrs Hilliard Gray & Co
+brooks.zophiel1834.xml,"Z’_phiâl; or, the Bride of Seven, 1834","Brooks, Maria (Gowen)",Boston,1834,G.verse,Royal Society,Royal Society
 bullard.reformation.xml,"The Reformation, 1832","Bullard, Anne Tuttle Jones",Boston,1832,G.fiction.other,the American Tract Society,the American Tract Society
 bullard.reformation.xml,"The Reformation, 1832","Bullard, Anne Tuttle Jones",Boston,1832,G.fiction.other,Congress,Congress
 bullard.reformation.xml,"The Reformation, 1832","Bullard, Anne Tuttle Jones",Boston,1832,G.fiction.other,District Court of Massachusetts,District Court of Massachusetts
@@ -211,7 +211,7 @@ child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans,
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Anti- Slavery Society,Anti Slavery Society
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Society of Friends,Society of Friends
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,African Company,African Company
-child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,DepíÇt of Maps and Plans,DepíÇt of Maps and Plans
+child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Dep’‚t of Maps and Plans,Dep’‚t of Maps and Plans
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,French Academy of Sciences,French Academy of Sciences
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Institute of Paris,Institute of Paris
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Committee for Vaccination,Committee for Vaccination
@@ -226,96 +226,96 @@ child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans,
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Wesleyan,Wesleyan
 chudleigh.essays.xml,"Essays Upon Several Subjects in Prose and Verse, 1710","Chudleigh, Lady Mary (Lee)",London,1710,G.non-fiction.essay,Church of England,Church of England
 chudleigh.poems3ch.xml,"Poems on Several Occasions. Together with the Song of the Three Children Paraphrased, 1703","Chudleigh, Lady Mary (Lee)",London,1703,G.verse,German Diet,German Diet
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Leadenhall-Street,Leadenhall-Street
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,London,London
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Douro,Douro
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Newfoundland,Newfoundland
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Quebec,Quebec
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,North America,North America
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,England,England
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Devonshire,Devonshire
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,the West Indies,the West Indies
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Scotland,Scotland
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Labrador,Labrador
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Treharne,Treharne
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Wiltshire,Wiltshire
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Somersetshire,Somersetshire
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Dorsetshire,Dorsetshire
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Treharne Hall,Treharne Hall
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Fairfield,Fairfield
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Rimont,Rimont
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Morrington Castle,Morrington Castle
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,France,France
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Ferrie's Field,Ferrie's Field
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,America,America
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Dawlish,Dawlish
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Ashwater,Ashwater
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Oxford,Oxford
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,India,India
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,East Indies,East Indies
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Westpool,Westpool
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Cornwall,Cornwall
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Ireland,Ireland
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Exeter,Exeter
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Torbay,Torbay
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Europe,Europe
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Essex,Essex
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Liverpool,Liverpool
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Chester,Chester
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Namptwich,Namptwich
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Huntingdon's,Huntingdon's
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Newcastle,Newcastle
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Uttoxeter,Uttoxeter
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Ashby de la Zouch,Ashby de la Zouch
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Leicester,Leicester
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Leicester Abbey,Leicester Abbey
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Greenland,Greenland
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Lapland,Lapland
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Morrington,Morrington
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Stokewood,Stokewood
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Lewin Court,Lewin Court
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Arlington,Arlington
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,North Britain,North Britain
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Dee,Dee
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Towie Craigs,Towie Craigs
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,,Leadenhall-street London,Leadenhall-street London
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Leadenhall-Street,Leadenhall-Street
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,London,London
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Douro,Douro
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Scotland,Scotland
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Portland,Portland
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Exeter Cathedral,Exeter Cathedral
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Heath Place,Heath Place
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Treharne,Treharne
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Castle of Towie Craigs,Castle of Towie Craigs
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,The Castle,The Castle
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Exeter,Exeter
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Rimont,Rimont
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Morrington Castle,Morrington Castle
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Warwick Castle,Warwick Castle
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Warwick,Warwick
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Warwick Chapel,Warwick Chapel
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Guy's Cliff,Guy's Cliff
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Kenilworth Castle,Kenilworth Castle
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,England,England
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Leicester,Leicester
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Devonshire,Devonshire
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,America's,America
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Fairfield,Fairfield
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Courtenay's,Courtenay's
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Morrington,Morrington
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Bath,Bath
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Towie Craigs,Towie Craigs
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Treharne Hall,Treharne Hall
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,America,America
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Treharne Wood,Treharne Wood
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Ireland,Ireland
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Hemeridge Cottage,Hemeridge Cottage
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Hemeridge,Hemeridge
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Peru,Peru
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Holland,Holland
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,sir Eglamour,sir Eglamour
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,,Edinburgh,Edinburgh
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Leadenhall-Street,Leadenhall-Street
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,London,London
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Douro,Douro
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Newfoundland,Newfoundland
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Quebec,Quebec
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,North America,North America
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,England,England
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Devonshire,Devonshire
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,the West Indies,the West Indies
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Scotland,Scotland
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Labrador,Labrador
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Treharne,Treharne
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Wiltshire,Wiltshire
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Somersetshire,Somersetshire
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Dorsetshire,Dorsetshire
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Treharne Hall,Treharne Hall
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Fairfield,Fairfield
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Rimont,Rimont
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Morrington Castle,Morrington Castle
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,France,France
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Ferrie's Field,Ferrie's Field
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,America,America
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Dawlish,Dawlish
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Ashwater,Ashwater
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Oxford,Oxford
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,India,India
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,East Indies,East Indies
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Westpool,Westpool
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Cornwall,Cornwall
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Ireland,Ireland
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Exeter,Exeter
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Torbay,Torbay
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Europe,Europe
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Essex,Essex
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Liverpool,Liverpool
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Chester,Chester
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Namptwich,Namptwich
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Huntingdon's,Huntingdon's
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Newcastle,Newcastle
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Uttoxeter,Uttoxeter
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Ashby de la Zouch,Ashby de la Zouch
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Leicester,Leicester
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Leicester Abbey,Leicester Abbey
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Greenland,Greenland
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Lapland,Lapland
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Morrington,Morrington
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Stokewood,Stokewood
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Lewin Court,Lewin Court
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Arlington,Arlington
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,North Britain,North Britain
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Dee,Dee
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Towie Craigs,Towie Craigs
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Leadenhall-street London,Leadenhall-street London
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Leadenhall-Street,Leadenhall-Street
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,London,London
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Douro,Douro
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Scotland,Scotland
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Portland,Portland
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Exeter Cathedral,Exeter Cathedral
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Heath Place,Heath Place
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Treharne,Treharne
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Castle of Towie Craigs,Castle of Towie Craigs
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,The Castle,The Castle
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Exeter,Exeter
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Rimont,Rimont
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Morrington Castle,Morrington Castle
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Warwick Castle,Warwick Castle
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Warwick,Warwick
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Warwick Chapel,Warwick Chapel
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Guy's Cliff,Guy's Cliff
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Kenilworth Castle,Kenilworth Castle
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,England,England
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Leicester,Leicester
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Devonshire,Devonshire
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,America's,America
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Fairfield,Fairfield
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Courtenay's,Courtenay's
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Morrington,Morrington
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Bath,Bath
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Towie Craigs,Towie Craigs
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Treharne Hall,Treharne Hall
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,America,America
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Treharne Wood,Treharne Wood
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Ireland,Ireland
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Hemeridge Cottage,Hemeridge Cottage
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Hemeridge,Hemeridge
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Peru,Peru
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Holland,Holland
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,sir Eglamour,sir Eglamour
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Edinburgh,Edinburgh
 clark.esquimaux03.xml,"The Esquimaux; or, Fidelity (vol. 3), 1819","Clark, Emily Frederick",London,1819,G.fiction,Minerva Press,Minerva Press
 clark.esquimaux03.xml,"The Esquimaux; or, Fidelity (vol. 3), 1819","Clark, Emily Frederick",London,1819,G.fiction,A K Newman and Co,A K Newman & Co
 clark.esquimaux03.xml,"The Esquimaux; or, Fidelity (vol. 3), 1819","Clark, Emily Frederick",London,1819,G.fiction,A K Newman & Co,A K Newman & Co
@@ -351,7 +351,7 @@ davies.appearance.xml,"The Appearance or Presence of the Son of Man, 1650","Davi
 davies.appearance.xml,"The Appearance or Presence of the Son of Man, 1650","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,House of Lords,House of Lords
 davies.appearance.xml,"The Appearance or Presence of the Son of Man, 1650","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,Exchequer,Exchequer
 davies.appearance.xml,"The Appearance or Presence of the Son of Man, 1650","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,upper House,upper House
-davies.blasphemous.xml,"The Blasphemous Charge Against Her, 1649","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,Curií_ Dominorum Regiorum Commissionariorum ad Causas Ecclesiasticas,Curií_ Dominorum Regiorum Commissionariorum ad Causas Ecclesiasticas
+davies.blasphemous.xml,"The Blasphemous Charge Against Her, 1649","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,Curi’_ Dominorum Regiorum Commissionariorum ad Causas Ecclesiasticas,Curi’_ Dominorum Regiorum Commissionariorum ad Causas Ecclesiasticas
 davies.blasphemous.xml,"The Blasphemous Charge Against Her, 1649","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,Star-Chamber,Star-Chamber
 davies.blessing.xml,"From the Lady Eleanor, Her Blessing to Her Beloved Daughter, 1644","Davies, Lady Eleanor",London,1644,G.non-fiction,Parliament,Parliament
 davies.blessing.xml,"From the Lady Eleanor, Her Blessing to Her Beloved Daughter, 1644","Davies, Lady Eleanor",London,1644,G.non-fiction,Parliaments,Parliament
@@ -406,24 +406,24 @@ fell.declaration.xml,"A Declaration and an Information from us the People of God
 francis.song.xml,"A Poetical Translation of the Song of Solomon, 1781","Francis, Anne (Gittins)",London,1781,G.drama.verse,the Temple,the Temple
 garnett.nightbefore.xml,"The Night Before the Bridal, Sappho, and Other Poems, 1824","Garnett, Catherine Grace",London,1824,G.verse,Longman Hurst Rees Orme Brown and Green,Longman Hurst Rees Orme Brown and Green
 garnett.nightbefore.xml,"The Night Before the Bridal, Sappho, and Other Poems, 1824","Garnett, Catherine Grace",London,1824,G.verse,A & R Spottiswoode,A & R Spottiswoode
-gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,,Somersetshire,Somersetshire
-gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,,Galway,Galway
-gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,,London,London
-gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,,Wales,Wales
-gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,,Strand,Strand
-gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,,Studley,Studley
-gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,,Yorkshire,Yorkshire
-gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,,India,India
-gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,,Indostan's,Indostan's
-gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,,Britain's,Britain's
-gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,,Fountaine's Abbey,Fountaine's Abbey
-gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,,Abbey's,Abbey's
-gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,,Wraxall's,Wraxall's
-gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,,Britannia's,Britain's
-gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,,India's,India's
-gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,,Albion's,Albion's
-gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,,Madagascar's,Madagascar's
-gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,,Parnassus',Parnassus'
+gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,G.verse,Somersetshire,Somersetshire
+gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,G.verse,Galway,Galway
+gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,G.verse,London,London
+gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,G.verse,Wales,Wales
+gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,G.verse,Strand,Strand
+gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,G.verse,Studley,Studley
+gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,G.verse,Yorkshire,Yorkshire
+gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,G.verse,India,India
+gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,G.verse,Indostan's,Indostan's
+gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,G.verse,Britain's,Britain's
+gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,G.verse,Fountaine's Abbey,Fountaine's Abbey
+gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,G.verse,Abbey's,Abbey's
+gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,G.verse,Wraxall's,Wraxall's
+gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,G.verse,Britannia's,Britain's
+gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,G.verse,India's,India's
+gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,G.verse,Albion's,Albion's
+gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,G.verse,Madagascar's,Madagascar's
+gooch.poems.xml,"Poems on Various Subjects, 1793","Gooch, Elizabeth Sarah (Villa-Real)",London,1793,G.verse,Parnassus',Parnassus'
 gray.rule.xml,"The Rule of the Most Blissed Father Saint Benedict (dedication), 1632","Gray, Alexia",Ghent,1632,G.non-fiction,holy Romane Church,holy Romane Church
 green.romance.xml,"Romance Readers and Romance Writers: A Satirical Novel, 1810","Green, Sarah",London,1810,G.fiction.novel,King's Bench,King's Bench
 green.romance.xml,"Romance Readers and Romance Writers: A Satirical Novel, 1810","Green, Sarah",London,1810,G.fiction.novel,Junta,Junta
@@ -636,7 +636,7 @@ owenson.poems.xml,"Poems, 1801","Owenson, Sydney",Dublin and London,1801,G.verse
 owenson.poems.xml,"Poems, 1801","Owenson, Sydney",Dublin and London,1801,G.verse,68th regt,69th regt
 owenson.poems.xml,"Poems, 1801","Owenson, Sydney",Dublin and London,1801,G.verse,Cambridge cavalry,Cambridge cavalry
 owenson.poems.xml,"Poems, 1801","Owenson, Sydney",Dublin and London,1801,G.verse,60th regt,61st regt
-owenson.poems.xml,"Poems, 1801","Owenson, Sydney",Dublin and London,1801,G.verse,Northampóîton regt,Northampóîton regt
+owenson.poems.xml,"Poems, 1801","Owenson, Sydney",Dublin and London,1801,G.verse,Northamp—”ton regt,Northamp—”ton regt
 parr-s.apologie.xml,"Susanna's Apology Against the Elders, 1659","Parr, Susanna",Oxford,1659,G.non-fiction,Parliament,Parliament
 philips.letters.xml,"Letters From Orinda to Poliarchus, 1705","Philips, Katherine (Fowler)",London,1705,G.non-fiction.letter,Parliament,Parliament
 plato.essays.xml,"Essays, 1841","Plato, Ann",Hartford,1841,G.non-fiction,Royal Society,Royal Society
@@ -720,7 +720,7 @@ royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washingt
 royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,United States' Senate of the Twentieth Congress,United States' Senate of the Twentieth Congress
 royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,House of Representatives of the Twentieth Congress,House of Representatives of the Twentieth Congress
 royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Post Office Department,Post Office Department
-royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Twenty-first CongressóîSenate,Twenty-first CongressóîSenate
+royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Twenty-first Congress—”Senate,Twenty-first Congress—”Senate
 ryves.hastiniad.xml,"The Hastiniad, 1784","Ryves, Eliza",London,1785,G.verse,House of Commons,House of Commons
 sanders.aborigine.xml,"Conversations Principally on the Aborigines of North America, 1829","Sanders, Elizabeth Elkins","Salem, Massachusetts",1829,G.non-fiction,Senate,Senate
 sanders.aborigine.xml,"Conversations Principally on the Aborigines of North America, 1829","Sanders, Elizabeth Elkins","Salem, Massachusetts",1829,G.non-fiction,New York Historical Society,New York Historical Society
