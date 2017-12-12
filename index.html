@@ -4,18 +4,21 @@
 
 html{
   /*background-color: #1E1E1E;*/
-  background-color: #212121;
+  /*background-color: #212121;*/
+  /*background-color: #282828;*/
+  background-color: #fcfcfc;
   height: 100vh;
 }
 
 body{
   font-family: sans-serif;
+  color: #292826;
 }
 
 .header{
   margin-left: 50px;
   padding: 10px;
-  color: white;
+  /*color: white;*/
 }
 
 #info{
@@ -24,6 +27,25 @@ font-weight: lighter;
 
 button{
   cursor: pointer;
+  /*color: white;*/
+  /*background-color: #282828;*/
+  background-color: #fcfcfc;
+  text-decoration: none;
+  padding: 10px 20px;
+  /*font-size: 14px;*/
+  font-weight: normal;
+  border-radius: 20px;
+  /*border: 1px solid white;*/
+  border: 1px solid #292826;
+}
+/*button:hover{
+  background-color: #323232;
+}*/
+.button-clicked{
+  /*color: #282828;
+  background-color: white;*/
+  color: #fcfcfc;
+  background-color: #292826;
 }
 
 #title{
@@ -83,7 +105,7 @@ h2{
   margin-left: 50px;
   margin-right: 50px;*/
   padding: 50px;
-  color:white;
+  /*color:white;*/
   font-weight: lighter;
 }
 
@@ -92,16 +114,17 @@ svg{
 }
 
 .axisColor text{
-  fill: white;
+  /*fill: white;*/
 }
 
 .collection{
   font-size: 11px;
   margin: 10px 0;
   line-height: 150%;
+  cursor: pointer;
 }
 
-ol::-webkit-scrollbar {
+/*ol::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 7px;
 }
@@ -109,11 +132,6 @@ ol::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: rgba(0,0,0,.5);
     box-shadow: 0 0 1px rgba(255,255,255,.5);
-}
-
-/*.selectedItem{
-	color: #232066;
-	font-weight: bold;
 }*/
 
 </style>
@@ -126,9 +144,9 @@ ol::-webkit-scrollbar-thumb {
   </p>
 </div>
 <div class="buttons">
-  <button id="btn-persName" type="button" class="btn-outline-primary">person names</button>
-  <button id="btn-orgName" type="button" class="btn-outline-primary">organization names</button>
-  <button id="btn-placeName" type="button" class="btn-outline-primary">place names</button>
+  <button id="btn-persName" type="button" class="btn-primary">person names</button>
+  <button id="btn-orgName" type="button" class="btn-primary">organization names</button>
+  <button id="btn-placeName" type="button" class="btn-primary">place names</button>
 </div>
 </br>
 <div class="container">
@@ -140,7 +158,7 @@ ol::-webkit-scrollbar-thumb {
     <h2 id="colC-title">Relationship of Top In-text Words to Genre</h2>
   </div>
   <div class="button" id="column-left">
-    <h2 id="colL-title">Collection by Pubication Year</h2>
+    <h2 id="colL-title">Collection by Publication Year</h2>
   </div>
 </div>
 </body>

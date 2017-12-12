@@ -1,7 +1,12 @@
 var elemTopData,
   metaTopData;
 
-dispatch.on("dataLoaded.list", function(meta, metaTop, metaTopGenre, elemDistTop, elemTop){
+// dispatch.on("dataLoaded.list", function(meta, metaTop, metaTopGenre, elemDistTop, elemTop){
+dispatch.on("dataLoaded.list",function(allData){
+  var metaTop = allData.metaTop,
+  metaTopGenre = allData.metaTopGenre,
+  elemTop = allData.elemTop,
+  elemDistTop = allData.elemDistTop;
 
   elemTopData = elemTop;
   metaTopData = metaTop;
@@ -14,11 +19,13 @@ dispatch.on("dataLoaded.list", function(meta, metaTop, metaTopGenre, elemDistTop
 
   listEnter = list.enter()
     .append('li')
+    // .append("a")
     .attr("class","collection");
 
   list.merge(listEnter)
     .html(function(d){ return "<b>Title:</b> " + d.title + " <br> <b>Author:</b> " + d.author})
-    .attr("id", function(d){ return d.filename })
+    // .attr("xlink:href", function(d){ return d.url; })
+    .attr("id", function(d){ return d.filename; })
     .style("color", function(d) {return scaleColor(d.genre); })
     .style("opacity", 0.8);
 
@@ -31,6 +38,10 @@ dispatch.on("dataLoaded.list", function(meta, metaTop, metaTopGenre, elemDistTop
     })
     .on("mouseleave",function(d){
       dispatch.call("unhighlight", null, d);
+    })
+    .on("click",function(d){
+      console.log(d.url);
+      window.open(d.url);
     });
 
 });

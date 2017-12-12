@@ -19,10 +19,20 @@ var curve = d3.line()
   .y(function(d){ return d.y})
   .curve(d3.curveBundle.beta(0.85));
 
+// var colorDrama = "#EC407A",
+//   colorFiction = "#BA68C8",
+//   colorNonFiction = "#03A9F4",
+//   colorVerse = "#00E676";
+
+var colorDrama = "#C2185B",
+  colorFiction = "#673AB7",
+  colorNonFiction = "#00ACC1",
+  colorVerse = "#43A047";
+
 // color scale for curves
 var scaleColor2 = d3.scaleOrdinal()
       .domain(["Drama", "Drama: Prose", "Drama: Verse", "Fiction", "Fiction: Letter", "Fiction: Novel", "Fiction: Other", "Non-fiction", "Non-fiction: Essay", "Non-fiction: Letter", "Non-fiction: Other", "Verse", "Verse: Lyric", "Verse: Narrative", "Verse: Other"])
-      .range(["#EC407A", "#EC407A", "#EC407A", "#BA68C8", "#BA68C8", "#BA68C8", "#BA68C8", "#03A9F4", "#03A9F4", "#03A9F4", "#03A9F4", "#00E676", "#00E676", "#00E676", "#00E676"]);
+      .range([colorDrama, colorDrama, colorDrama, colorFiction, colorFiction, colorFiction, colorFiction, colorNonFiction, colorNonFiction, colorNonFiction, colorNonFiction, colorVerse, colorVerse, colorVerse, colorVerse]);
 
 
 // function to make list of texts
@@ -55,7 +65,12 @@ function makePath(data){
 
 };
 
-dispatch.on("dataLoaded.network",function(meta, metaTop, metaTopGenre, elemDistTop, elemTop){
+// dispatch.on("dataLoaded.network",function(meta, metaTop, metaTopGenre, elemDistTop, elemTop){
+dispatch.on("dataLoaded.network",function(allData){
+  var metaTop = allData.metaTop,
+  metaTopGenre = allData.metaTopGenre,
+  elemTop = allData.elemTop,
+  elemDistTop = allData.elemDistTop;
 
   // create text for elements
   var ypos = 0,
@@ -86,7 +101,8 @@ dispatch.on("dataLoaded.network",function(meta, metaTop, metaTopGenre, elemDistT
     .attr("font-family","sans-serif")
     .attr("font-size","8px")
     .attr("text-anchor","end")
-    .attr("fill","white");
+    // .attr("fill","white")
+    .attr("fill","#292826");
 
   var rectElem = svgC.selectAll(".rect-elem")
     .data(elemDistTop)
@@ -103,7 +119,8 @@ dispatch.on("dataLoaded.network",function(meta, metaTop, metaTopGenre, elemDistT
     .attr("height", function(d){
       return (d.prop*networkHeight);
     })
-    .attr("fill","white");
+    // .attr("fill","white")
+    .attr("fill","#292826");
 
   // create text for genres
   var textMeta = svgC.selectAll(".text-meta")
@@ -132,12 +149,13 @@ dispatch.on("dataLoaded.network",function(meta, metaTop, metaTopGenre, elemDistT
     .attr("fill", function(d){return scaleColor2(d.key)});
 
   // create links connecting element text and genre text
-  elemTop = makePath(elemTop);
+  // console.log(elemTop.filter(d => !d.sourceData));
+  // elemTop = makePath(elemTop);
 
   svgC.selectAll(".links").remove();
 
   var link = svgC.selectAll(".links")
-    .data(elemTop)
+    .data(makePath(elemTop.filter(d => d.sourceData)))
     .enter()
     .append("g")
     .attr("class","links")

@@ -19,10 +19,15 @@ var scaleY = d3.scaleTime()
   .domain([new Date(1500,0,1), new Date(1875,0,1)])
   .range([hL,0]);
 
+// var scaleColor = d3.scaleOrdinal()
+//       .domain(["Drama","Fiction","Non-fiction","Verse"])
+//       .range(["#EC407A", "#BA68C8", "#03A9F4", "#00E676"]);
+        // 400 pink, 300 purple, 500 light blue, A400 green
+
 var scaleColor = d3.scaleOrdinal()
       .domain(["Drama","Fiction","Non-fiction","Verse"])
-      .range(["#EC407A", "#BA68C8", "#03A9F4", "#00E676"]);
-        // 400 pink, 300 purple, 500 light blue, A400 green
+      .range(["#C2185B", "#673AB7", "#00ACC1", "#43A047"]);
+        // 700 pink, 500 deep purple, 600 cyan, 600 green
 
 // domain for scatterplot
 var axisY = d3.axisLeft()
@@ -36,11 +41,15 @@ var axisX = d3.axisTop()
 
 var elemTopData;
 
-dispatch.on("dataLoaded.scatterplot",function(meta, metaTop, metaTopGenre, elemDistTop, elemTop){
+// dispatch.on("dataLoaded.scatterplot",function(meta, metaTop, metaTopGenre, elemDistTop, elemTop){
+dispatch.on("dataLoaded.scatterplot",function(allData){
+  var meta = allData.meta,
+  metaTop = allData.metaTop,
+  metaTopGenre = allData.metaTopGenre,
+  elemTop = allData.elemTop,
+  elemDistTop = allData.elemDistTop;
 
   elemTopData = elemTop;
-
-  svgL.selectAll(".dots").remove();
 
   // force-layout
   var forceX = d3.forceX()
@@ -48,17 +57,30 @@ dispatch.on("dataLoaded.scatterplot",function(meta, metaTop, metaTopGenre, elemD
   var forceY = d3.forceY()
     .y(function(d) { return scaleY(d.pubDate); });
   var simulation = d3.forceSimulation()
-    .force("collide", d3.forceCollide(4) )
+    .force("collide", d3.forceCollide(4))
     .force("forceX", forceX )
     .force("forceY", forceY );
+  simulation.first = 0;
 
   // create circles for metadata
   var dot = svgL.selectAll(".dots")
-    .data(meta)
-    .enter()
+    .data(meta, function(d) {
+      return d.filename;
+    });
+
+  dot.exit().remove();
+
+  dotEnter = dot.enter()
     .append("circle")
     .attr("class","dots")
-    .attr("r", 3)
+    .attr("cx", function(d) { d.x = scaleX(d.genre)+10; return d.x; })
+    .attr("cy", function(d) { d.y = scaleY(d.pubDate); return d.y; });
+
+  dot = dot.merge(dotEnter)
+    .attr("r", function(d){
+      if(d.isTop == 1){ return 3; }
+      else{ return 2.5; }
+    })
     .style("fill", function(d){
       if(d.isTop == 1){ return scaleColor(d.genre); }
       else{ return "none"; }
@@ -69,9 +91,15 @@ dispatch.on("dataLoaded.scatterplot",function(meta, metaTop, metaTopGenre, elemD
     .style("stroke-width", function(d){
       if(d.isTop == 0){ return "1px"; }
     })
-    .style("opacity", 0.8)
-    .attr("cx", function(d) { return scaleX(d.genre); })
-    .attr("cy", function(d) { return scaleY(d.pubDate); });
+    .style("opacity", 0.8);
+
+    simulation.on("tick", function() {
+      dot
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+    })
+    .nodes(meta);
+
 
   // interactions
   dot
@@ -84,13 +112,6 @@ dispatch.on("dataLoaded.scatterplot",function(meta, metaTop, metaTopGenre, elemD
    .on("mouseout",function(d){
      dispatch.call("unhighlight", null, d);
    });
-
-  simulation.on("tick", function() {
-    dot
-      .attr("cx", function(d) { return d.x; })
-      .attr("cy", function(d) { return d.y; });
-    })
-    .nodes(meta);
 
   svgL.append("g")
     .attr("id","axis-y")
