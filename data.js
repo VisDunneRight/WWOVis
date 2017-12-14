@@ -1,24 +1,56 @@
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
 var dispatch = d3.dispatch("dataLoaded",
   "highlight","highlightmeta","highlightelem","unhighlight");
 
-var name = "orgName";
+var name = "persName";
+document.getElementById("element").innerHTML = "Person Names";
 var redraws = 0;
 
 // buttons
 d3.select("#btn-persName")
+  .classed("button-clicked", true)
   .on("click",function(){
     d3.selectAll(".btn-primary").classed("button-clicked", false);
     d3.select(this).classed("button-clicked", true);
+    document.getElementById("element").innerHTML = "Person Names";
     redraws++;
     name = "persName";
     drawNetwork(name);
   });
 
 d3.select("#btn-orgName")
-  .classed("button-clicked", true)
   .on("click",function(){
     d3.selectAll(".btn-primary").classed("button-clicked", false);
     d3.select(this).classed("button-clicked", true);
+    document.getElementById("element").innerHTML = "Organization Names";
     redraws++;
     name = "orgName";
     drawNetwork(name);
@@ -28,16 +60,11 @@ d3.select("#btn-placeName")
   .on("click",function(){
     d3.selectAll(".btn-primary").classed("button-clicked", false);
     d3.select(this).classed("button-clicked", true);
+    document.getElementById("element").innerHTML = "Place Names";
     redraws++;
     name = "placeName";
     drawNetwork(name);
   });
-
-// d3.selectAll(".btn-primary")
-//   .on("click",function(d){
-//     d3.select(this).classed("button-clicked", true);
-//   })
-
 
 var meta;
 
