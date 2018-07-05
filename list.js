@@ -19,12 +19,10 @@ dispatch.on("dataLoaded.list",function(allData){
 
   listEnter = list.enter()
     .append('li')
-    // .append("a")
     .attr("class","collection");
 
   list.merge(listEnter)
     .html(function(d){ return "<b>Title:</b> " + d.title + " <br> <b>Author:</b> " + d.author})
-    // .attr("xlink:href", function(d){ return d.url; })
     .attr("id", function(d){ return d.filename; })
     .style("color", function(d) {return scaleColor(d.genre); })
     .style("opacity", 0.8);
@@ -40,7 +38,6 @@ dispatch.on("dataLoaded.list",function(allData){
       dispatch.call("unhighlight", null, d);
     })
     .on("click",function(d){
-      console.log(d.url);
       window.open(d.url);
     });
 
@@ -66,10 +63,13 @@ dispatch.on("highlight.list", function(d,i){
       if(d.filename != e.filename){
         return 0.2;
       }
+      // else{ console.log(d.title); }
     });
 
   if(i == 1){
-    document.getElementById(d.filename).scrollIntoView(true);
+    var list = document.getElementById("list"),
+    targetli = document.getElementById(d.filename);
+    list.scrollTop = targetli.offsetTop - 298; //298 is offsetTop for the first element
   }
 });
 

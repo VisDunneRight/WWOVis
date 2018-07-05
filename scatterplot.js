@@ -6,9 +6,78 @@ var svgL = d3.select("#column-left")
   .append("svg")
   .attr("width", wL)
   .attr("height", hL)
-  .append('g')
-  .attr('class','plot')
-  .attr('transform','translate('+ m.l +','+ m.t +')');
+  .append("g")
+  .attr("class","plot")
+  .attr("height", hL-40)
+  .attr("transform","translate("+ m.l +","+ m.t +")");
+
+var legend = svgL.append("g")
+  .attr("class","legend")
+  .style("opacity",0);
+
+legend
+  .append("path")
+  .attr("id","legendLineFilled")
+  .style("fill", "none")
+  .style("stroke", "#292826")
+  .style("stroke-width", "0.5px");
+
+legend
+  .append("path")
+  .attr("id","legendLineUnfilled")
+  .style("fill", "none")
+  .style("stroke", "#292826")
+  .style("stroke-width", "0.5px");
+
+legend
+  .append("text")
+  .attr("id","legendTextFilled1")
+  .text("includes one of the")
+  .style("font-size", "8px")
+  .style("fill", "#292826")
+  .attr("text-anchor","middle");
+legend
+  .append("text")
+  .attr("id","legendTextFilled2")
+  .text("top 20 in-text elements")
+  .style("font-size", "8px")
+  .style("fill", "#292826")
+  .attr("text-anchor","middle");
+
+legend
+  .append("text")
+  .attr("id","legendTextUnfilled1")
+  .text("doesn't include one of the")
+  .style("font-size", "8px")
+  .style("fill", "#292826")
+  .attr("text-anchor","middle");
+legend
+  .append("text")
+  .attr("id","legendTextUnfilled2")
+  .text("top 20 in-text elements")
+  .style("font-size", "8px")
+  .style("fill", "#292826")
+  .attr("text-anchor","middle");
+
+function positionLegendLines(indicator){
+  var cx, cy;
+  if(indicator == 1){
+    dotFilled = svgL.selectAll(".dots")
+      .filter(function(d){ return (d.isTop == 1) && (d.filename == "bacon.sermonelec.xml"); });
+    cx = dotFilled.attr("cx");
+    cy = dotFilled.attr("cy");
+  }
+  if(indicator == 0){
+    dotUnfilled = svgL.selectAll(".dots")
+      .filter(function(d){ return (d.isTop == 0) && (d.filename == "sidney.clorinda.xml"); });
+    cx = dotUnfilled.attr("cx");
+    cy = dotUnfilled.attr("cy");
+  }
+  return {
+    cx: +cx,
+    cy: +cy
+  }
+};
 
 // scale for scatterplot
 var scaleX = d3.scaleOrdinal()
@@ -17,31 +86,47 @@ var scaleX = d3.scaleOrdinal()
 
 var scaleY = d3.scaleTime()
   .domain([new Date(1500,0,1), new Date(1875,0,1)])
-  .range([hL,0]);
-
-// var scaleColor = d3.scaleOrdinal()
-//       .domain(["Drama","Fiction","Non-fiction","Verse"])
-//       .range(["#EC407A", "#BA68C8", "#03A9F4", "#00E676"]);
-        // 400 pink, 300 purple, 500 light blue, A400 green
+  .range([hL-40,0]);
 
 var scaleColor = d3.scaleOrdinal()
-      .domain(["Drama","Fiction","Non-fiction","Verse"])
-      .range(["#C2185B", "#673AB7", "#00ACC1", "#43A047"]);
-        // 700 pink, 500 deep purple, 600 cyan, 600 green
+  .domain(["Drama","Fiction","Non-fiction","Verse"])
+  .range(["#C2185B", "#673AB7", "#00ACC1", "#43A047"]);
+  // 700 pink, 500 deep purple, 600 cyan, 600 green
 
 // domain for scatterplot
 var axisY = d3.axisLeft()
     .scale(scaleY)
     .ticks(d3.timeYear.every(50))
+    .tickFormat(d3.timeFormat("%Y"))
     .tickSize(0);
 
 var axisX = d3.axisTop()
     .scale(scaleX)
     .tickSize(0);
 
+svgL.append("g")
+  .attr("id","axis-y")
+  .attr("transform", "translate(20,0)")
+  .attr("font-family","sans-serif")
+  .attr("font-size","10px")
+  .attr("fill","#292826")
+  .attr('class', 'axisColor')
+  .call(axisY)
+  .select(".domain")
+  .remove();
+
+svgL.append("g")
+  .attr("id","axis-x")
+  .attr("transform", "translate(10,10)")
+  .attr("font-family","sans-serif")
+  .attr("font-size","10px")
+  .attr('class', 'axisColor')
+  .call(axisX)
+  .select(".domain")
+  .remove();
+
 var elemTopData;
 
-// dispatch.on("dataLoaded.scatterplot",function(meta, metaTop, metaTopGenre, elemDistTop, elemTop){
 dispatch.on("dataLoaded.scatterplot",function(allData){
   var meta = allData.meta,
   metaTop = allData.metaTop,
@@ -100,6 +185,48 @@ dispatch.on("dataLoaded.scatterplot",function(allData){
     })
     .nodes(meta);
 
+    // place legend
+    legend
+      .transition()
+      .delay(3000)
+      .duration(2000)
+      .style("opacity",0.6);
+
+    var cxFilled, cxUnfilled;
+
+    svgL.select("#legendLineFilled")
+      .attr("d",function(){
+        start = positionLegendLines(1);
+        cxFilled = start.cx;
+        return "M " + (start.cx-8) + " " + (start.cy) +
+          " L " + (start.cx-28) + " " + (start.cy) +
+          " L " + (start.cx-28) + " 430";
+      });
+
+    svgL.select("#legendLineUnfilled")
+      .attr("d",function(){
+        start = positionLegendLines(0);
+        cxUnfilled = start.cx;
+        return "M " + (start.cx+8) + " " + (start.cy) +
+          " L " + (start.cx+18) + " " + (start.cy) +
+          " L " + (start.cx+18) + " 400";
+      });
+
+    svgL.select("#legendTextFilled1")
+      .attr("x",cxFilled-28)
+      .attr("y",440);
+
+    svgL.select("#legendTextFilled2")
+      .attr("x",cxFilled-28)
+      .attr("y",450);
+
+    svgL.select("#legendTextUnfilled1")
+      .attr("x",cxUnfilled+18)
+      .attr("y",410);
+
+    svgL.select("#legendTextUnfilled2")
+      .attr("x",cxUnfilled+18)
+      .attr("y",420);
 
   // interactions
   dot
@@ -112,26 +239,6 @@ dispatch.on("dataLoaded.scatterplot",function(allData){
    .on("mouseout",function(d){
      dispatch.call("unhighlight", null, d);
    });
-
-  svgL.append("g")
-    .attr("id","axis-y")
-    .attr("transform", "translate(20,0)")
-    .attr("font-family","sans-serif")
-    .attr("font-size","10px")
-    .attr('class', 'axisColor')
-    .call(axisY)
-    .select(".domain")
-    .remove();
-
-  svgL.append("g")
-    .attr("id","axis-x")
-    .attr("transform", "translate(10,10)")
-    .attr("font-family","sans-serif")
-    .attr("font-size","10px")
-    .attr('class', 'axisColor')
-    .call(axisX)
-    .select(".domain")
-    .remove();
 
 });
 
@@ -149,6 +256,10 @@ dispatch.on("highlight.scatterplot",function(d){
     .transition()
     .duration(100)
     .style("opacity",0.2);
+  svgL.selectAll(".legend")
+    .transition()
+    .duration(100)
+    .style("opacity",0.1);
 });
 
 dispatch.on("highlightmeta.scatterplot",function(d){
@@ -165,6 +276,10 @@ dispatch.on("highlightmeta.scatterplot",function(d){
     .transition()
     .duration(100)
     .style("opacity",0.2);
+  svgL.selectAll(".legend")
+    .transition()
+    .duration(100)
+    .style("opacity",0.1);
 });
 
 dispatch.on("highlightelem.scatterplot",function(d){
@@ -184,6 +299,10 @@ dispatch.on("highlightelem.scatterplot",function(d){
     .transition()
     .duration(100)
     .style("opacity",0.2);
+  svgL.selectAll(".legend")
+    .transition()
+    .duration(100)
+    .style("opacity",0.1);
 });
 
 dispatch.on("unhighlight.scatterplot",function(d){
@@ -201,4 +320,8 @@ dispatch.on("unhighlight.scatterplot",function(d){
       if(d.isTop == 0){ return "1px"; }
     })
     .style("opacity", 0.8);
+  svgL.selectAll(".legend")
+    .transition()
+    .duration(100)
+    .style("opacity",0.6);
 });

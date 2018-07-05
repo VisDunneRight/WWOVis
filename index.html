@@ -16,13 +16,20 @@ body{
 }
 
 .header{
-  margin-left: 50px;
+  margin-left: 40px;
   padding: 10px;
   /*color: white;*/
 }
 
+#title{
+  font-size: 26px;
+  font-weight: lighter;
+}
+
 #info{
-font-weight: lighter;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 120%;
 }
 
 button{
@@ -48,28 +55,16 @@ button{
   background-color: #292826;
 }
 
-#title{
-  font-size: 26px;
-}
-
-#info{
-  font-size: 14px;
-  line-height: 120%;
-}
-
 .buttons{
-  margin-left:50px;
-  padding: 10px 10px;
+  margin-left: 40px;
+  padding: 10px;
 }
-
-/*#btn-orgName{
-  background-color: #20B2AA;
-}*/
 
 h2{
   font-size: 12px;
   margin: auto;
   margin-left: 30px;
+  font-weight: lighter;
 }
 
 #colL-title{
@@ -78,9 +73,7 @@ h2{
 
 #colC-title{
   text-align: center;
-  /*margin-left: 180px;*/
-  width:400px;
-  margin:auto;
+  margin-left: 0px;
 }
 
 #colR-title{
@@ -91,20 +84,20 @@ h2{
 #column-right{ float: right; width: 20%; }
 #column-center{ display: inline-block; width: 50%; }
 
-#column-left, #column-center{
+#column-left, #column-center, #column-right{
   height: 500px;
 }
 
 #column-right ol{
   overflow: scroll;
-  height: 500px;
+  height: 480px;
 }
 
 .container{
   /*margin-top: 20px;
   margin-left: 50px;
   margin-right: 50px;*/
-  padding: 50px;
+  margin: 50px;
   /*color:white;*/
   font-weight: lighter;
 }
@@ -114,7 +107,7 @@ svg{
 }
 
 .axisColor text{
-  /*fill: white;*/
+  fill: #292826;
 }
 
 .collection{
@@ -124,7 +117,7 @@ svg{
   cursor: pointer;
 }
 
-/*ol::-webkit-scrollbar {
+ol::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 7px;
 }
@@ -132,14 +125,100 @@ ol::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: rgba(0,0,0,.5);
     box-shadow: 0 0 1px rgba(255,255,255,.5);
-}*/
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px 20px;
+    border: 1px solid #888;
+    width: 60%;
+    font-weight: lighter;
+    line-height: 120%;
+    height: 80%;
+    overflow: scroll;
+}
+
+.modal-content p{
+  font-size: 14px;
+  padding: 0px 30px;
+}
+
+.modal-content ul{
+  font-size: 14px;
+  padding: 0px 50px;
+}
+
+.modal-content h4{
+  font-size: 16px;
+  padding: 0px 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#model-firstp {
+  padding-top: 30px;
+  margin-top: 0px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myBtn{
+padding-right: 0px;
+background-color:none;
+border: none;
+font-size: 14px;
+font-weight: normal;
+font-family: sans-serif;
+}
+
+#myBtn:hover{
+background-color:none;
+border: none;
+color:#00ACC1;
+}
+
+#note{
+text-align: center;
+font-weight: lighter;
+font-size: 14px;
+}
 
 </style>
 <body>
 <div class="header">
   <h1 id="title"> In the Text of Women Writers </h1>
   <p id="info">
-    An exploration of the Women Writers Online text collection<br />
+    An exploration of the <a href="http://wwp.neu.edu/wwo" target="_blank">Women Writers Online</a> text collection<br />
     including the top words and phrases of the following encoded elements:
   </p>
 </div>
@@ -152,14 +231,76 @@ ol::-webkit-scrollbar-thumb {
 <div class="container">
   <div class="button" id="column-right">
     <h2 id="colR-title">List of Texts</h2>
-    <ol class ="list"></ol>
+    <ol class="list" id="list"></ol>
   </div>
   <div class="button" id="column-center">
-    <h2 id="colC-title">Relationship of Top In-text Words to Genre</h2>
+    <h2 id="colC-title">Relationship of Top <span id="element">In-text Words</span> to Genre</h2>
   </div>
   <div class="button" id="column-left">
-    <h2 id="colL-title">Collection by Publication Year</h2>
+    <h2 id="colL-title">Text Collection by Publication Year</h2>
   </div>
+</div>
+<!-- Trigger/Open The Modal -->
+<p id="note">
+  <button id="myBtn">About this project</button>
+  &nbsp;| &nbsp; Sarah Campbell, Zheng-yan Yu, Sarah Connell, Cody Dunne
+</p>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="model-firstp">This project was designed and developed by Sarah Campbell and Zheng-yan Yu, who are graduate students in the
+      <a href="https://www.northeastern.edu/visualization/" target="_blank">Information Design and Visualization</a>
+      MFA program at Northeastern University. The project was developed as a part of the course
+      <a href="https://codydunne.github.io/cs7295-f17/" target="_blank">CS 7295 Special Topics in Data Visualization</a>,
+       taught by <a href="https://www.ccis.northeastern.edu/people/cody-dunne/" target="_blank">Cody Dunne</a>.
+      <a href="http://library.northeastern.edu/about/library-staff-directory/sarah-connell" target="_blank">Sarah Connell</a>,
+       Assistant Director at the <a href="https://dsg.neu.edu/" target="_blank">Digital Scholarship Group</a> at the university,
+       served as the project parter. Both Cody and Sarah Connell provided resources, feedback, and subject matter expertise.
+    </p>
+    <h4>How to Explore</h4>
+    <p>
+      This visualization includes multiple interactions to enable user exploration:
+    </p>
+      <ul>
+        <li>click through the three buttons to visualize one of the three highlighted in-text elements</li>
+        <li>hover over a filled circle in the scatterplot, the text in the network visualization, or a text in the list
+          to see the corresponding information across the three components</li>
+        <li>click on the text in the list to see the text in full on the WWO website</li>
+      </ul>
+    <h4>Methodology</h4>
+    <p>
+      This data was queried from the Women Writers Online textbase and includes metadata for each of the 401 texts
+        as well as three in-text elements. Multiple values for each element can exist in each text; for example, a text
+        can have multiple person names identified. See the <a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/REF-ELEMENTS.html" target="_blank">TEI guidelines</a>
+        documentation for more about encoding of in-text elements. Below is the original count of in-text element values:
+    </p>
+        <ul>
+          <li>142 texts included 810 unique organization names</li>
+          <li>396 texts included 19,038 unique place names</li>
+          <li>399	texts included 49,311 unique person names</li>
+        </ul>
+    <p>
+        The original queried data listed the in-text element values as one string for each text, with separators in between. We parsed
+        the data so there existed a row for each combination of text and in-text element value; if a text included 10
+        person names, there would be one line for each name. We then manually aggregated values that were common, like
+        Catholic Church and Catholike Church. These aggregations were based on sense and were not completed for the entirety
+        of the data, but were completed enough in order to truly show the most frequent in-text element values.
+        We visualized the top 20 values for each in-text element and their relationship to texts they reside in.
+        For more information on accessing the Women Writers Online textbase, please see the <a href="http://www.wwp.northeastern.edu/wwo/license/" target="_blank">licensing and access</a> page.
+      </p>
+    <h4>Links</h4>
+    <ul>
+      <li><a href="http://wwp.neu.edu/wwo" target="_blank">Women Writers Online</a></li>
+      <li><a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/REF-ELEMENTS.html" target="_blank">TEI guidelines</a></li>
+      <li><a href="http://www.wwp.northeastern.edu/wwo/license/" target="_blank">WWO Licensing and Access</a></li>
+    </ul>
+
+  </div>
+
 </div>
 </body>
 <script src="https://d3js.org/d3.v4.min.js"></script>

@@ -1,7 +1,7 @@
 filename,title,author,pubLocation,pubDate,mainGenre,elementOriginal,element
 adams.jews.xml,"The History of the Jews, 1812","Adams, Hannah",Boston,1812,G.non-fiction,Sanhedrim,Sanhedrim
 adams.jews.xml,"The History of the Jews, 1812","Adams, Hannah",Boston,1812,G.non-fiction,sanhedrim,sanhedrim
-adams.jews.xml,"The History of the Jews, 1812","Adams, Hannah",Boston,1812,G.non-fiction,Congress,Congress
+adams.jews.xml,"The History of the Jews, 1812","Adams, Hannah",Boston,1812,G.non-fiction,Congress,Congress of the United States
 adams.jews.xml,"The History of the Jews, 1812","Adams, Hannah",Boston,1812,G.non-fiction,National Institute,National Institute
 adams.jews.xml,"The History of the Jews, 1812","Adams, Hannah",Boston,1812,G.non-fiction,council of Elvira,council of Elvira
 adams.jews.xml,"The History of the Jews, 1812","Adams, Hannah",Boston,1812,G.non-fiction,university of Paris,university of Paris
@@ -12,7 +12,7 @@ adams.jews.xml,"The History of the Jews, 1812","Adams, Hannah",Boston,1812,G.non
 adams.jews.xml,"The History of the Jews, 1812","Adams, Hannah",Boston,1812,G.non-fiction,university of Frankfort,university of Frankfort
 adams.jews.xml,"The History of the Jews, 1812","Adams, Hannah",Boston,1812,G.non-fiction,university of Salamanca,university of Salamanca
 adams.jews.xml,"The History of the Jews, 1812","Adams, Hannah",Boston,1812,G.non-fiction,university of Cambridge,University of Cambridge
-adams.jews.xml,"The History of the Jews, 1812","Adams, Hannah",Boston,1812,G.non-fiction,parliament,Parliament
+adams.jews.xml,"The History of the Jews, 1812","Adams, Hannah",Boston,1812,G.non-fiction,parliament,British Parliament
 adams.jews.xml,"The History of the Jews, 1812","Adams, Hannah",Boston,1812,G.non-fiction,university of Prague,university of Prague
 adams.jews.xml,"The History of the Jews, 1812","Adams, Hannah",Boston,1812,G.non-fiction,Constituent Assembly,Constituent Assembly
 adams.jews.xml,"The History of the Jews, 1812","Adams, Hannah",Boston,1812,G.non-fiction,Harvard University,Harvard University
@@ -27,7 +27,7 @@ adams.jews.xml,"The History of the Jews, 1812","Adams, Hannah",Boston,1812,G.non
 adams.jews.xml,"The History of the Jews, 1812","Adams, Hannah",Boston,1812,G.non-fiction,London society,London society
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,Massachusetts Historical Society,Massachusetts Historical Society
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,Historical Society,Historical Society
-adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,Congress,Congress
+adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,Congress,Congress of the United States
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,continental congress,continental congress
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,British parliament,British Parliament
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,second continental congress,second continental congress
@@ -40,9 +40,9 @@ adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",De
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,Cambridge college,Cambridge college
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,Harvard College,Harvard College
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,general court of Massachusetts,general court of Massachusetts
-adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,English parliament,English parliament
+adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,English parliament,British Parliament
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,President and Society for propagating the Gospel in New-England,President and Society for propagating the Gospel in New-England
-adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,Parliament,Parliament
+adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,Parliament,British Parliament
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,Harvard college,Harvard college
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,Governor and Company of Connecticut,Governor and Company of Connecticut
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,Yale college,Yale college
@@ -53,24 +53,24 @@ adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",De
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,Royal Society,Royal Society
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,Dartmouth college,Dartmouth college
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,Trustees and Fellows of the college or university in the English colony of Rhode- Island and Providence Plantations,Trustees and Fellows of the college or university in the English colony of Rhode- Island and Providence Plantations
-adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,congress,congress
-adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,parliament,Parliament
+adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,congress,Congress of the United States
+adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,parliament,British Parliament
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,East-India company,East-India company
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,provincial congress,provincial congress
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,provincial congress of Massachusetts,provincial congress of Massachusetts
-adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,house of lords,house of lords
+adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,house of lords,House of Lords
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,Massachusetts congress,Massachusetts congress
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,Massachusetts assembly,Massachusetts assembly
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,the American Academy of Arts and Sciences,the American Academy of Arts and Sciences
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,Providence college,Providence college
 adams.newengland.xml,"A Summary History of New-England, 1799","Adams, Hannah",Dedham,1799,G.non-fiction,R I college,R I college
 aikin.epistles.xml,"Epistles on Women, 1810","Aikin, Lucy",London,1810,G.verse,Roman Senate,Roman Senate
-askew.fox.xml,"The Two Examinations of Anne Askew (Foxe), 1563","Askew, Anne",London,1563,G.non-fiction,Catholike church,Catholike church
+askew.fox.xml,"The Two Examinations of Anne Askew (Foxe), 1563","Askew, Anne",London,1563,G.non-fiction,Catholike church,Catholic Church
 askew.fox.xml,"The Two Examinations of Anne Askew (Foxe), 1563","Askew, Anne",London,1563,G.non-fiction,church of England,Church of England
-askew.fox.xml,"The Two Examinations of Anne Askew (Foxe), 1563","Askew, Anne",London,1563,G.non-fiction,Catholike churche,Catholike church
-askew.fox.xml,"The Two Examinations of Anne Askew (Foxe), 1563","Askew, Anne",London,1563,G.non-fiction,Catholicke churche,Catholike church
-askew.fox.xml,"The Two Examinations of Anne Askew (Foxe), 1563","Askew, Anne",London,1563,G.non-fiction,catholike church,Catholike church
-askew.fox.xml,"The Two Examinations of Anne Askew (Foxe), 1563","Askew, Anne",London,1563,G.non-fiction,catholique church,Catholike church
+askew.fox.xml,"The Two Examinations of Anne Askew (Foxe), 1563","Askew, Anne",London,1563,G.non-fiction,Catholike churche,Catholic Church
+askew.fox.xml,"The Two Examinations of Anne Askew (Foxe), 1563","Askew, Anne",London,1563,G.non-fiction,Catholicke churche,Catholic Church
+askew.fox.xml,"The Two Examinations of Anne Askew (Foxe), 1563","Askew, Anne",London,1563,G.non-fiction,catholike church,Catholic Church
+askew.fox.xml,"The Two Examinations of Anne Askew (Foxe), 1563","Askew, Anne",London,1563,G.non-fiction,catholique church,Catholic Church
 astell.proposal.xml,"A Serious Proposal to the Ladies, 1694","Astell, Mary",London,1694,G.non-fiction,Church of England,Church of England
 augustine.virgin.xml,"The History of the Angelical Virgin Glorious S. Clare (Introductory Material), 1635","Augustine, Sister Magdalen",Douai,1635,G.non-fiction,Freer Minors,Freer Minors
 augustine.virgin.xml,"The History of the Angelical Virgin Glorious S. Clare (Introductory Material), 1635","Augustine, Sister Magdalen",Douai,1635,G.non-fiction,holy Order of the Poore Clares,holy Order of the Poore Clares
@@ -85,8 +85,8 @@ barbauld.legacy.xml,"A Legacy for Young Ladies, 1826","Barbauld, Anna Laetitia (
 barbauld.works1.xml,"The Works of Anna Laetitia Barbauld, 1826","Barbauld, Anna Laetitia (Aikin)",Boston,1826,G.verse,Warrington academy,Warrington academy
 barbauld.works1.xml,"The Works of Anna Laetitia Barbauld, 1826","Barbauld, Anna Laetitia (Aikin)",Boston,1826,G.verse,Palgrave school,Palgrave school
 barbauld.works1.xml,"The Works of Anna Laetitia Barbauld, 1826","Barbauld, Anna Laetitia (Aikin)",Boston,1826,G.verse,House of Commons,House of Commons
-barbauld.works2.xml,"The Works of Anna Laetitia Barbauld (vol. 2), 1826","Barbauld, Anna Laetitia (Aikin)",Boston,1826,G.non-fiction,Parliament,Parliament
-barbauld.works2.xml,"The Works of Anna Laetitia Barbauld (vol. 2), 1826","Barbauld, Anna Laetitia (Aikin)",Boston,1826,G.non-fiction,Congress,Congress
+barbauld.works2.xml,"The Works of Anna Laetitia Barbauld (vol. 2), 1826","Barbauld, Anna Laetitia (Aikin)",Boston,1826,G.non-fiction,Parliament,British Parliament
+barbauld.works2.xml,"The Works of Anna Laetitia Barbauld (vol. 2), 1826","Barbauld, Anna Laetitia (Aikin)",Boston,1826,G.non-fiction,Congress,Congress of the United States
 barbauld.works2.xml,"The Works of Anna Laetitia Barbauld (vol. 2), 1826","Barbauld, Anna Laetitia (Aikin)",Boston,1826,G.non-fiction,Royal Institution,Royal Institution
 barbauld.works2.xml,"The Works of Anna Laetitia Barbauld (vol. 2), 1826","Barbauld, Anna Laetitia (Aikin)",Boston,1826,G.non-fiction,Institution,Institution
 barbauld.works2.xml,"The Works of Anna Laetitia Barbauld (vol. 2), 1826","Barbauld, Anna Laetitia (Aikin)",Boston,1826,G.non-fiction,Bible Society,Bible Society
@@ -102,48 +102,48 @@ bath.poems.xml,"Poems on Various Occasions, 1806","Bath, Elizabeth",London,1806,
 behn.emperor.xml,"The Emperor of the Moon, 1688","Behn, Aphra",London,1688,G.drama,Majesties Servants,Majesties Servants
 behn.emperor.xml,"The Emperor of the Moon, 1688","Behn, Aphra",London,1688,G.drama,Rosicrucian Order,Rosicrucian Order
 behn.emperor.xml,"The Emperor of the Moon, 1688","Behn, Aphra",London,1688,G.drama,Rosicrucian,Rosicrucian
-behn.loverwatch.xml,"La Montre: or The Lover—Ès Watch, 1686","Behn, Aphra",London,1686,G.fiction,Honourable Society of the Inner-Temple,Honourable Society of the Inner-Temple
+behn.loverwatch.xml,"La Montre: or The Lovers Watch, 1686","Behn, Aphra",London,1686,G.fiction,Honourable Society of the Inner-Temple,Honourable Society of the Inner-Temple
 behn.nun.xml,"History of the Nun, 1689","Behn, Aphra",London,1689,G.fiction,Order of St Augustine,Order of St Augustine
 behn.nun.xml,"History of the Nun, 1689","Behn, Aphra",London,1689,G.fiction,Royal Society,Royal Society
 behn.widow.xml,"The Widow Ranter, 1690","Behn, Aphra",London,1690,G.drama,their Majesties Servants,their Majesties Servants
 behn.widow.xml,"The Widow Ranter, 1690","Behn, Aphra",London,1690,G.drama,Virginian Court of Judicature,Virginian Court of Judicature
 behn.widow.xml,"The Widow Ranter, 1690","Behn, Aphra",London,1690,G.drama,Their Majesties Servants,Their Majesties Servants
-bradstreet.tenthmuse.xml,"The Tenth Muse, 1650","Bradstreet, Anne (Dudley)",London,1650,G.verse,Parliament,Parliament
+bradstreet.tenthmuse.xml,"The Tenth Muse, 1650","Bradstreet, Anne (Dudley)",London,1650,G.verse,Parliament,British Parliament
 brooke.emily.xml,"The History of Emily Montague, 1769","Brooke, Frances (Moore)",London,1769,G.fiction,Ursulines,Ursulines
 brooke.emily.xml,"The History of Emily Montague, 1769","Brooke, Frances (Moore)",London,1769,G.fiction,church of England,Church of England
-brooks.zophiel1834.xml,"Z’_phiâl; or, the Bride of Seven, 1834","Brooks, Maria (Gowen)",Boston,1834,G.verse,Polish Committee,Polish Committee
-brooks.zophiel1834.xml,"Z’_phiâl; or, the Bride of Seven, 1834","Brooks, Maria (Gowen)",Boston,1834,G.verse,Messrs Hilliard Gray & Co,Messrs Hilliard Gray & Co
-brooks.zophiel1834.xml,"Z’_phiâl; or, the Bride of Seven, 1834","Brooks, Maria (Gowen)",Boston,1834,G.verse,Royal Society,Royal Society
+brooks.zophiel1834.xml,"Z_phi‰l; or, the Bride of Seven, 1834","Brooks, Maria (Gowen)",Boston,1834,G.verse,Polish Committee,Polish Committee
+brooks.zophiel1834.xml,"Z_phi‰l; or, the Bride of Seven, 1834","Brooks, Maria (Gowen)",Boston,1834,G.verse,Messrs Hilliard Gray & Co,Messrs Hilliard Gray & Co
+brooks.zophiel1834.xml,"Z_phi‰l; or, the Bride of Seven, 1834","Brooks, Maria (Gowen)",Boston,1834,G.verse,Royal Society,Royal Society
 bullard.reformation.xml,"The Reformation, 1832","Bullard, Anne Tuttle Jones",Boston,1832,G.fiction.other,the American Tract Society,the American Tract Society
-bullard.reformation.xml,"The Reformation, 1832","Bullard, Anne Tuttle Jones",Boston,1832,G.fiction.other,Congress,Congress
+bullard.reformation.xml,"The Reformation, 1832","Bullard, Anne Tuttle Jones",Boston,1832,G.fiction.other,Congress,Congress of the United States
 bullard.reformation.xml,"The Reformation, 1832","Bullard, Anne Tuttle Jones",Boston,1832,G.fiction.other,District Court of Massachusetts,District Court of Massachusetts
-bullard.reformation.xml,"The Reformation, 1832","Bullard, Anne Tuttle Jones",Boston,1832,G.fiction.other,Roman Catholic church,Roman Catholic church
+bullard.reformation.xml,"The Reformation, 1832","Bullard, Anne Tuttle Jones",Boston,1832,G.fiction.other,Roman Catholic church,Catholic Church
 campbell.poems.xml,"Poems, 1816","Campbell, Dorothea Primrose",London,1816,G.verse,British Navy,British Navy
-candler.poetical.xml,"Poetical Attempts, 1803","Candler, Ann (More)",Ipswich,1803,G.verse,Parliment,Parliament
+candler.poetical.xml,"Poetical Attempts, 1803","Candler, Ann (More)",Ipswich,1803,G.verse,Parliment,British Parliament
 candler.poetical.xml,"Poetical Attempts, 1803","Candler, Ann (More)",Ipswich,1803,G.verse,Literary Society Ipswich,Literary Society Ipswich
 candler.poetical.xml,"Poetical Attempts, 1803","Candler, Ann (More)",Ipswich,1803,G.verse,Guards,Guards
 carleton.case.xml,"The Case of Madam Mary Carleton, 1663","Carleton, Mary",London,1663,G.non-fiction,Grays Inne,Grays Inne
-cartwright.jewes.xml,"The Petition of the Jews, 1649","Cartwright, Joanna",London,1649,G.non-fiction,Parliament,Parliament
+cartwright.jewes.xml,"The Petition of the Jews, 1649","Cartwright, Joanna",London,1649,G.non-fiction,Parliament,British Parliament
 cartwright.jewes.xml,"The Petition of the Jews, 1649","Cartwright, Joanna",London,1649,G.non-fiction,generall Councell of Officers,generall Councell of Officers
 cartwright.jewes.xml,"The Petition of the Jews, 1649","Cartwright, Joanna",London,1649,G.non-fiction,generall Councell of the Officers of the Army,generall Councell of the Officers of the Army
 cartwright.jewes.xml,"The Petition of the Jews, 1649","Cartwright, Joanna",London,1649,G.non-fiction,Generall Councel of Officers,Generall Councel of Officers
 cartwright.jewes.xml,"The Petition of the Jews, 1649","Cartwright, Joanna",London,1649,G.non-fiction,Generall Councell of the Army,Generall Councell of the Army
 cartwright.jewes.xml,"The Petition of the Jews, 1649","Cartwright, Joanna",London,1649,G.non-fiction,Generall Councells,Generall Councells
 cary-e.edoct.xml,"The History of the Most Unfortunate Prince King Edward II, 1680","Cary, Elizabeth (Tanfield), Viscountess Falkland",London,1680,G.non-fiction,His Majesties Music,His Majesties Music
-cary-e.history.xml,"The History of the Life, Reign, and Death of Edward II, 1680","Cary, Elizabeth (Tanfield), Viscountess Falkland",London,1680,G.non-fiction,Parliament,Parliament
+cary-e.history.xml,"The History of the Life, Reign, and Death of Edward II, 1680","Cary, Elizabeth (Tanfield), Viscountess Falkland",London,1680,G.non-fiction,Parliament,British Parliament
 cary-e.history.xml,"The History of the Life, Reign, and Death of Edward II, 1680","Cary, Elizabeth (Tanfield), Viscountess Falkland",London,1680,G.non-fiction,High Court of Parliament,High Court of Parliament
-cary-e.history.xml,"The History of the Life, Reign, and Death of Edward II, 1680","Cary, Elizabeth (Tanfield), Viscountess Falkland",London,1680,G.non-fiction,Senate,Senate
+cary-e.history.xml,"The History of the Life, Reign, and Death of Edward II, 1680","Cary, Elizabeth (Tanfield), Viscountess Falkland",London,1680,G.non-fiction,Senate,British senate
 cary-e.history.xml,"The History of the Life, Reign, and Death of Edward II, 1680","Cary, Elizabeth (Tanfield), Viscountess Falkland",London,1680,G.non-fiction,Council,Council
 cary-e.history.xml,"The History of the Life, Reign, and Death of Edward II, 1680","Cary, Elizabeth (Tanfield), Viscountess Falkland",London,1680,G.non-fiction,Nether-House,Nether-House
 cary-e.history.xml,"The History of the Life, Reign, and Death of Edward II, 1680","Cary, Elizabeth (Tanfield), Viscountess Falkland",London,1680,G.non-fiction,Chamber,Chamber
 cary-e.history.xml,"The History of the Life, Reign, and Death of Edward II, 1680","Cary, Elizabeth (Tanfield), Viscountess Falkland",London,1680,G.non-fiction,Common-Council,Common-Council
 cary-e.history.xml,"The History of the Life, Reign, and Death of Edward II, 1680","Cary, Elizabeth (Tanfield), Viscountess Falkland",London,1680,G.non-fiction,University of Oxford,University of Oxford
-cary-e.history.xml,"The History of the Life, Reign, and Death of Edward II, 1680","Cary, Elizabeth (Tanfield), Viscountess Falkland",London,1680,G.non-fiction,Houses,Houses
+cary-e.history.xml,"The History of the Life, Reign, and Death of Edward II, 1680","Cary, Elizabeth (Tanfield), Viscountess Falkland",London,1680,G.non-fiction,Houses,House of Lords
 cary-e.history.xml,"The History of the Life, Reign, and Death of Edward II, 1680","Cary, Elizabeth (Tanfield), Viscountess Falkland",London,1680,G.non-fiction,lower House,lower House
 cavendish.observations.xml,"Observations upon Experimental Philosophy, 1666","Cavendish, Margaret (Lucas), Duchess of Newcastle",London,1666,G.non-fiction,University of Cambridg,University of Cambridge
-cavendish.olio.xml,"The World's Olio, 1655","Cavendish, Margaret (Lucas), Duchess of Newcastle",London,1655,G.non-fiction,Senate,Senate
-cavendish.william.xml,"The Life of William Cavendish, 1667","Cavendish, Margaret (Lucas), Duchess of Newcastle",London,1667,G.non-fiction,Parliament,Parliament
-cavendish.william.xml,"The Life of William Cavendish, 1667","Cavendish, Margaret (Lucas), Duchess of Newcastle",London,1667,G.non-fiction,Parliaments,Parliament
+cavendish.olio.xml,"The World's Olio, 1655","Cavendish, Margaret (Lucas), Duchess of Newcastle",London,1655,G.non-fiction,Senate,British senate
+cavendish.william.xml,"The Life of William Cavendish, 1667","Cavendish, Margaret (Lucas), Duchess of Newcastle",London,1667,G.non-fiction,Parliament,British Parliament
+cavendish.william.xml,"The Life of William Cavendish, 1667","Cavendish, Margaret (Lucas), Duchess of Newcastle",London,1667,G.non-fiction,Parliaments,British Parliament
 cavendish.william.xml,"The Life of William Cavendish, 1667","Cavendish, Margaret (Lucas), Duchess of Newcastle",London,1667,G.non-fiction,House of Lords,House of Lords
 cavendish.william.xml,"The Life of William Cavendish, 1667","Cavendish, Margaret (Lucas), Duchess of Newcastle",London,1667,G.non-fiction,Orthodox Church of England,Orthodox Church of England
 cavendish.william.xml,"The Life of William Cavendish, 1667","Cavendish, Margaret (Lucas), Duchess of Newcastle",London,1667,G.non-fiction,St John's Colledg,St John's Colledg
@@ -171,15 +171,15 @@ cheney.pilgrimpeep.xml,"A Peep at the Pilgrims, 1824","Cheney, Harriet Vaughan (
 cheney.pilgrimpeep.xml,"A Peep at the Pilgrims, 1824","Cheney, Harriet Vaughan (Foster)",Boston,1824,G.fiction,Plymouth company,Plymouth company
 cheney.pilgrimpeep.xml,"A Peep at the Pilgrims, 1824","Cheney, Harriet Vaughan (Foster)",Boston,1824,G.fiction,Virginia Companies,Virginia Companies
 cheney.pilgrimpeep.xml,"A Peep at the Pilgrims, 1824","Cheney, Harriet Vaughan (Foster)",Boston,1824,G.fiction,the Congress of the United States,the Congress of the United States
-chidley.counsell.xml,"Good Counsel, to the Petitioners for Presbyterian Government, 1645","Chidley, Katharine",s.l.,1645,G.non-fiction,Parliament,Parliament
+chidley.counsell.xml,"Good Counsel, to the Petitioners for Presbyterian Government, 1645","Chidley, Katharine",s.l.,1645,G.non-fiction,Parliament,British Parliament
 chidley.counsell.xml,"Good Counsel, to the Petitioners for Presbyterian Government, 1645","Chidley, Katharine",s.l.,1645,G.non-fiction,Ministery,Ministery
 chidley.counsell.xml,"Good Counsel, to the Petitioners for Presbyterian Government, 1645","Chidley, Katharine",s.l.,1645,G.non-fiction,Church of England,Church of England
-chidley.counsell.xml,"Good Counsel, to the Petitioners for Presbyterian Government, 1645","Chidley, Katharine",s.l.,1645,G.non-fiction,Parliaments,Parliament
-chidley.newyeares.xml,"A New-Yeares Gift, 1645","Chidley, Katharine",s.l.,1645,G.non-fiction,Parliament,Parliament
+chidley.counsell.xml,"Good Counsel, to the Petitioners for Presbyterian Government, 1645","Chidley, Katharine",s.l.,1645,G.non-fiction,Parliaments,British Parliament
+chidley.newyeares.xml,"A New-Yeares Gift, 1645","Chidley, Katharine",s.l.,1645,G.non-fiction,Parliament,British Parliament
 chidley.newyeares.xml,"A New-Yeares Gift, 1645","Chidley, Katharine",s.l.,1645,G.non-fiction,Assembly of Divines,Assembly of Divines
-chidley.newyeares.xml,"A New-Yeares Gift, 1645","Chidley, Katharine",s.l.,1645,G.non-fiction,Parliaments,Parliament
+chidley.newyeares.xml,"A New-Yeares Gift, 1645","Chidley, Katharine",s.l.,1645,G.non-fiction,Parliaments,British Parliament
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Richmond Enquirer,Richmond Enquirer
-child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Congress,Congress
+child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Congress,Congress of the United States
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,District Court of Massachusetts,District Court of Massachusetts
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,British Parliament,British Parliament
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Inquisition,Inquisition
@@ -191,17 +191,17 @@ child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans,
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Legislature of Virginia,Legislature of Virginia
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Colonization Society of Kentucky,Colonization Society of Kentucky
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Cambridge University,University of Cambridge
-child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Parliament of England,Parliament of England
+child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Parliament of England,British Parliament
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Assembly of Grenada,Assembly of Grenada
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,British Government,British Government
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Supreme Federal Court,Supreme Federal Court
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,United States Senate,United States Senate
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Virginia Legislature,Virginia Legislature
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,House of Representatives,House of Representatives
-child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Senate,Senate
+child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Senate,United States Senate
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Supreme Court of the United States,Supreme Court of the United States
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,House of Congress,House of Congress
-child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,House,House
+child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,House,House of Lords
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Colonization Society,Colonization Society
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Anti-Slavery Society,Anti Slavery Society
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,American Colonization Society,American Colonization Society
@@ -211,7 +211,7 @@ child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans,
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Anti- Slavery Society,Anti Slavery Society
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Society of Friends,Society of Friends
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,African Company,African Company
-child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Dep’‚t of Maps and Plans,Dep’‚t of Maps and Plans
+child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Depât of Maps and Plans,Depât of Maps and Plans
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,French Academy of Sciences,French Academy of Sciences
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Institute of Paris,Institute of Paris
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Committee for Vaccination,Committee for Vaccination
@@ -226,8 +226,8 @@ child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans,
 child.appeal.xml,"An Appeal in Favor of that Class of Americans Called Africans, 1833","Child, Lydia Maria",Boston,1833,G.non-fiction,Wesleyan,Wesleyan
 chudleigh.essays.xml,"Essays Upon Several Subjects in Prose and Verse, 1710","Chudleigh, Lady Mary (Lee)",London,1710,G.non-fiction.essay,Church of England,Church of England
 chudleigh.poems3ch.xml,"Poems on Several Occasions. Together with the Song of the Three Children Paraphrased, 1703","Chudleigh, Lady Mary (Lee)",London,1703,G.verse,German Diet,German Diet
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Leadenhall-Street,Leadenhall-Street
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,London,London
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Leadenhall-Street,Leadenhall-street London
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,London,Leadenhall-street London
 clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Douro,Douro
 clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Newfoundland,Newfoundland
 clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Quebec,Quebec
@@ -250,7 +250,7 @@ clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily
 clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,America,America
 clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Dawlish,Dawlish
 clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Ashwater,Ashwater
-clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Oxford,Oxford
+clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Oxford,University of Oxford
 clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,India,India
 clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,East Indies,East Indies
 clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Westpool,Westpool
@@ -280,7 +280,7 @@ clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily
 clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Towie Craigs,Towie Craigs
 clark.esquimaux01.xml,"The Esquimaux; or, Fidelity (vol. 1), 1819","Clark, Emily Frederick",London,1819,G.fiction,Leadenhall-street London,Leadenhall-street London
 clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Leadenhall-Street,Leadenhall-Street
-clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,London,London
+clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,London,Leadenhall-Street
 clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Douro,Douro
 clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Scotland,Scotland
 clark.esquimaux02.xml,"The Esquimaux; or, Fidelity (vol. 2), 1819","Clark, Emily Frederick",London,1819,G.fiction,Portland,Portland
@@ -327,7 +327,7 @@ clive.case.xml,"The Case of Mrs. Clive, 1744","Clive, Catherine",London,1744,G.n
 clive.case.xml,"The Case of Mrs. Clive, 1744","Clive, Catherine",London,1744,G.non-fiction,Drury- Lane,Drury- Lane
 clive.case.xml,"The Case of Mrs. Clive, 1744","Clive, Catherine",London,1744,G.non-fiction,Covent- Garden Theatre,Covent- Garden Theatre
 cowley.dramas.xml,"The Works of Mrs. Cowley, 1813","Cowley, Hannah (Parkhouse)",London,1813,G.drama,Wilkie and Robinson,Wilkie and Robinson
-cowley.moreways.xml,"More Ways Than One, 1813","Cowley, Hannah (Parkhouse)",London,1813,G.drama,Parliament,Parliament
+cowley.moreways.xml,"More Ways Than One, 1813","Cowley, Hannah (Parkhouse)",London,1813,G.drama,Parliament,British Parliament
 cowley.poems.xml,"Poems, 1813","Cowley, Hannah (Parkhouse)",London,1813,G.verse,Wilkie and Robinson,Wilkie and Robinson
 cowley.poems.xml,"Poems, 1813","Cowley, Hannah (Parkhouse)",London,1813,G.verse,Tribune,Tribune
 cushing.letters.xml,"Letters, Descriptive of Public Monuments, Scenery, and Manners in France and Spain (vol. 1, France), 1832","Cushing, Caroline Elizabeth (Wilde)","Newburyport, MA",1832,G.non-fiction,Institute,Institute
@@ -343,29 +343,29 @@ cushing.letters2.xml,"Letters, Descriptive of Public Monuments, Scenery, and Man
 cushing.letters2.xml,"Letters, Descriptive of Public Monuments, Scenery, and Manners in France and Spain (vol. 2, Spain), 1832","Cushing, Caroline Elizabeth (Wilde)","Newburyport, MA",1832,G.non-fiction,English Church,English Church
 cushing.saratoga2.xml,"Saratoga; a Tale of the Revolution (vol. 2), 1824","Cushing, Eliza Lanesford",Boston,1824,G.fiction,American Colonies,American Colonies
 cushing.saratoga2.xml,"Saratoga; a Tale of the Revolution (vol. 2), 1824","Cushing, Eliza Lanesford",Boston,1824,G.fiction,States,States
-cushing.saratoga2.xml,"Saratoga; a Tale of the Revolution (vol. 2), 1824","Cushing, Eliza Lanesford",Boston,1824,G.fiction,Congress,Congress
+cushing.saratoga2.xml,"Saratoga; a Tale of the Revolution (vol. 2), 1824","Cushing, Eliza Lanesford",Boston,1824,G.fiction,Congress,Congress of the United States
 danvers.oxford.xml,"The Oxford-Act: A Poem, 1693","D'Anvers, Alicia (Clarke)",London,1693,G.verse,Christians,Christians
 danvers.oxford.xml,"The Oxford-Act: A Poem, 1693","D'Anvers, Alicia (Clarke)",London,1693,G.verse,Jesuits,Jesuits
 danvers.oxford.xml,"The Oxford-Act: A Poem, 1693","D'Anvers, Alicia (Clarke)",London,1693,G.verse,Ionians,Ionians
-davies.appearance.xml,"The Appearance or Presence of the Son of Man, 1650","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,Parliaments,Parliament
+davies.appearance.xml,"The Appearance or Presence of the Son of Man, 1650","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,Parliaments,British Parliament
 davies.appearance.xml,"The Appearance or Presence of the Son of Man, 1650","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,House of Lords,House of Lords
 davies.appearance.xml,"The Appearance or Presence of the Son of Man, 1650","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,Exchequer,Exchequer
 davies.appearance.xml,"The Appearance or Presence of the Son of Man, 1650","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,upper House,upper House
-davies.blasphemous.xml,"The Blasphemous Charge Against Her, 1649","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,Curi’_ Dominorum Regiorum Commissionariorum ad Causas Ecclesiasticas,Curi’_ Dominorum Regiorum Commissionariorum ad Causas Ecclesiasticas
+davies.blasphemous.xml,"The Blasphemous Charge Against Her, 1649","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,Curi_ Dominorum Regiorum Commissionariorum ad Causas Ecclesiasticas,Curi_ Dominorum Regiorum Commissionariorum ad Causas Ecclesiasticas
 davies.blasphemous.xml,"The Blasphemous Charge Against Her, 1649","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,Star-Chamber,Star-Chamber
-davies.blessing.xml,"From the Lady Eleanor, Her Blessing to Her Beloved Daughter, 1644","Davies, Lady Eleanor",London,1644,G.non-fiction,Parliament,Parliament
-davies.blessing.xml,"From the Lady Eleanor, Her Blessing to Her Beloved Daughter, 1644","Davies, Lady Eleanor",London,1644,G.non-fiction,Parliaments,Parliament
+davies.blessing.xml,"From the Lady Eleanor, Her Blessing to Her Beloved Daughter, 1644","Davies, Lady Eleanor",London,1644,G.non-fiction,Parliament,British Parliament
+davies.blessing.xml,"From the Lady Eleanor, Her Blessing to Her Beloved Daughter, 1644","Davies, Lady Eleanor",London,1644,G.non-fiction,Parliaments,British Parliament
 davies.blessing.xml,"From the Lady Eleanor, Her Blessing to Her Beloved Daughter, 1644","Davies, Lady Eleanor",London,1644,G.non-fiction,Knights of St George,Knights of St George
 davies.cryingcharge.xml,"The Crying Charge, 1649","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,Church of England,Church of England
-davies.cryingcharge.xml,"The Crying Charge, 1649","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,Parliament,Parliament
+davies.cryingcharge.xml,"The Crying Charge, 1649","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,Parliament,British Parliament
 davies.cryingcharge.xml,"The Crying Charge, 1649","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,Church of Rome,Church of Rome
-davies.feast.xml,"For the Blessed Feast of Easter, 1646","Davies, Lady Eleanor",s.l.,1646,G.non-fiction,Parliament,Parliament
+davies.feast.xml,"For the Blessed Feast of Easter, 1646","Davies, Lady Eleanor",s.l.,1646,G.non-fiction,Parliament,British Parliament
 davies.gerbier.xml,"For the Right Noble Sir Balthazar Gerbier, 1649","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,Romish Church,Romish Church
-davies.gospel.xml,"The Everlasting Gospel, 1649","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,Parliament,Parliament
+davies.gospel.xml,"The Everlasting Gospel, 1649","Davies, Lady Eleanor",[s.l.],1649,G.non-fiction,Parliament,British Parliament
 davies.kingsofearth.xml,"All the Kings of the Earth Shall Praise Thee, 1633","Davies, Lady Eleanor",[s.l.],1633,G.non-fiction,Church of Rome,Church of Rome
 davies.kingsofearth.xml,"All the Kings of the Earth Shall Praise Thee, 1633","Davies, Lady Eleanor",[s.l.],1633,G.non-fiction,Romes,Romes
 defleury.divinepoems.xml,"Divine Poems and Essays, 1791","De Fleury, Maria",London,1791,G.verse,Bellamy and Roberts,Bellamy and Roberts
-dixon.poems.xml,"Poems on Several Occasions, 1740","Dixon, Sarah",Canterbury,1740,G.verse,Parliament,Parliament
+dixon.poems.xml,"Poems on Several Occasions, 1740","Dixon, Sarah",Canterbury,1740,G.verse,Parliament,British Parliament
 dixon.poems.xml,"Poems on Several Occasions, 1740","Dixon, Sarah",Canterbury,1740,G.verse,Royal Welsh Fusileers,Royal Welsh Fusileers
 dixon.poems.xml,"Poems on Several Occasions, 1740","Dixon, Sarah",Canterbury,1740,G.verse,Boxley Abby,Boxley Abby
 dixon.poems.xml,"Poems on Several Occasions, 1740","Dixon, Sarah",Canterbury,1740,G.verse,University Coll Oxford,University Coll Oxford
@@ -379,30 +379,30 @@ dowriche.french.xml,"The French History, 1589","Dowriche, Anne (Edgecombe)",Lond
 dowriche.french.xml,"The French History, 1589","Dowriche, Anne (Edgecombe)",London,1589,G.verse,Sorbons,Sorbons
 dowriche.french.xml,"The French History, 1589","Dowriche, Anne (Edgecombe)",London,1589,G.verse,Switzers,Switzers
 edgeworth.letters.xml,"Letters for Literary Ladies, 1795","Edgeworth, Maria",London,1795,G.fiction,French Academy of Sciences,French Academy of Sciences
-elizabeth.amost.xml,"A Most Excellent and Remarkable Speech, 1575 (published 1643)",Elizabeth I,London,1643-01-28,G.non-fiction,Parliament,Parliament
-elizabeth.amost.xml,"A Most Excellent and Remarkable Speech, 1575 (published 1643)",Elizabeth I,London,1643-01-28,G.non-fiction,English Parliaments,English Parliaments
+elizabeth.amost.xml,"A Most Excellent and Remarkable Speech, 1575 (published 1643)",Elizabeth I,London,1643-01-28,G.non-fiction,Parliament,British Parliament
+elizabeth.amost.xml,"A Most Excellent and Remarkable Speech, 1575 (published 1643)",Elizabeth I,London,1643-01-28,G.non-fiction,English Parliaments,British Parliament
 elizabeth.goldendewes2.xml,"The Golden Speech, 1601",Elizabeth I,London,1693,G.non-fiction,House of Lords,House of Lords
 elizabeth.goldendewes2.xml,"The Golden Speech, 1601",Elizabeth I,London,1693,G.non-fiction,House of Commons,House of Commons
-elizabeth.goldendewes2.xml,"The Golden Speech, 1601",Elizabeth I,London,1693,G.non-fiction,House,House
+elizabeth.goldendewes2.xml,"The Golden Speech, 1601",Elizabeth I,London,1693,G.non-fiction,House,House of Lords
 elizabeth.goldendewes2.xml,"The Golden Speech, 1601",Elizabeth I,London,1693,G.non-fiction,Lower House,Lower House
 elizabeth.hermaiesties.xml,"Her Majesty's Most Princely Answer (The Golden Speech), 1601",Elizabeth I,London,1601-11-30,G.non-fiction,Lower House of Parliament,Lower House of Parliament
 elizabeth.hermaiesties.xml,"Her Majesty's Most Princely Answer (The Golden Speech), 1601",Elizabeth I,London,1601-11-30,G.non-fiction,Lower House,Lower House
-elizabeth.lastspeech.xml,"The Last Speech and Thanks of Queen Elizabeth, 1601",Elizabeth I,London,1679,G.non-fiction,Parliament,Parliament
+elizabeth.lastspeech.xml,"The Last Speech and Thanks of Queen Elizabeth, 1601",Elizabeth I,London,1679,G.non-fiction,Parliament,British Parliament
 elizabeth.lastspeech.xml,"The Last Speech and Thanks of Queen Elizabeth, 1601",Elizabeth I,London,1679,G.non-fiction,House of Commons,House of Commons
 elizabeth.marrdewes.xml,"The Marriage Speech (parliamentary version), 1559",Elizabeth I,London,1693,G.non-fiction,House of Lords,House of Lords
 elizabeth.marrdewes.xml,"The Marriage Speech (parliamentary version), 1559",Elizabeth I,London,1693,G.non-fiction,House of Commons,House of Commons
-elizabeth.marrdewes.xml,"The Marriage Speech (parliamentary version), 1559",Elizabeth I,London,1693,G.non-fiction,House,House
+elizabeth.marrdewes.xml,"The Marriage Speech (parliamentary version), 1559",Elizabeth I,London,1693,G.non-fiction,House,House of Lords
 elizabeth.marrdewes.xml,"The Marriage Speech (parliamentary version), 1559",Elizabeth I,London,1693,G.non-fiction,Privy-Council,Privy-Council
 elizabeth.marrdewes.xml,"The Marriage Speech (parliamentary version), 1559",Elizabeth I,London,1693,G.non-fiction,Lower House,Lower House
-elizabeth.sptoherlast.xml,"Queen Elizabeth's Speech to Her Last Parliament, 1601 (published 1642)",Elizabeth I,London,1642,G.non-fiction,Parliament,Parliament
+elizabeth.sptoherlast.xml,"Queen Elizabeth's Speech to Her Last Parliament, 1601 (published 1642)",Elizabeth I,London,1642,G.non-fiction,Parliament,British Parliament
 elizabeth.sptoherlast.xml,"Queen Elizabeth's Speech to Her Last Parliament, 1601 (published 1642)",Elizabeth I,London,1642,G.non-fiction,lower House,lower House
 elizabeth.sptoherlast.xml,"Queen Elizabeth's Speech to Her Last Parliament, 1601 (published 1642)",Elizabeth I,London,1642,G.non-fiction,Lower-House,Lower-House
-elizabeth.sptoherlast.xml,"Queen Elizabeth's Speech to Her Last Parliament, 1601 (published 1642)",Elizabeth I,London,1642,G.non-fiction,House,House
-elizabeth.twospeeches.xml,"A Speech Made by Queen Elizabeth, 1593 (published 1688)",Elizabeth I,London,1688,G.non-fiction,Parliament,Parliament
+elizabeth.sptoherlast.xml,"Queen Elizabeth's Speech to Her Last Parliament, 1601 (published 1642)",Elizabeth I,London,1642,G.non-fiction,House,House of Lords
+elizabeth.twospeeches.xml,"A Speech Made by Queen Elizabeth, 1593 (published 1688)",Elizabeth I,London,1688,G.non-fiction,Parliament,British Parliament
 evelyn.foppensis.xml,"Mundus Foppensis: or the Fop Displayed, 1691","Evelyn, Mary",London,1691,G.verse,Crown-Office,Crown-Office
 evelyn.foppensis.xml,"Mundus Foppensis: or the Fop Displayed, 1691","Evelyn, Mary",London,1691,G.verse,Court of Arches,Court of Arches
 evelyn.foppensis.xml,"Mundus Foppensis: or the Fop Displayed, 1691","Evelyn, Mary",London,1691,G.verse,King's-Bench,King's-Bench
-fell.declaration.xml,"A Declaration and an Information from us the People of God Called Quakers, 1660","Fell, Margaret (Askew)",London,1660,G.non-fiction,Parliament,Parliament
+fell.declaration.xml,"A Declaration and an Information from us the People of God Called Quakers, 1660","Fell, Margaret (Askew)",London,1660,G.non-fiction,Parliament,British Parliament
 francis.song.xml,"A Poetical Translation of the Song of Solomon, 1781","Francis, Anne (Gittins)",London,1781,G.drama.verse,the Temple,the Temple
 garnett.nightbefore.xml,"The Night Before the Bridal, Sappho, and Other Poems, 1824","Garnett, Catherine Grace",London,1824,G.verse,Longman Hurst Rees Orme Brown and Green,Longman Hurst Rees Orme Brown and Green
 garnett.nightbefore.xml,"The Night Before the Bridal, Sappho, and Other Poems, 1824","Garnett, Catherine Grace",London,1824,G.verse,A & R Spottiswoode,A & R Spottiswoode
@@ -429,7 +429,7 @@ green.romance.xml,"Romance Readers and Romance Writers: A Satirical Novel, 1810"
 green.romance.xml,"Romance Readers and Romance Writers: A Satirical Novel, 1810","Green, Sarah",London,1810,G.fiction.novel,Junta,Junta
 green.romance.xml,"Romance Readers and Romance Writers: A Satirical Novel, 1810","Green, Sarah",London,1810,G.fiction.novel,Lloyd's,Lloyd's
 green.romance.xml,"Romance Readers and Romance Writers: A Satirical Novel, 1810","Green, Sarah",London,1810,G.fiction.novel,church of England,Church of England
-green.romance.xml,"Romance Readers and Romance Writers: A Satirical Novel, 1810","Green, Sarah",London,1810,G.fiction.novel,Oxford,Oxford
+green.romance.xml,"Romance Readers and Romance Writers: A Satirical Novel, 1810","Green, Sarah",London,1810,G.fiction.novel,Oxford,University of Oxford
 haywood.eovaai.xml,"Adventures of Eovaai, Princess of Ijaveo, 1736","Haywood, Eliza (Fowler)",London,1736,G.fiction,Cabal,Cabal
 haywood.spectator02.xml,"The Female Spectator (vol. 2), 1745","Haywood, Eliza (Fowler)",London,1745,G.non-fiction,Licence-Office,Licence-Office
 haywood.spectator02.xml,"The Female Spectator (vol. 2), 1745","Haywood, Eliza (Fowler)",London,1745,G.non-fiction,Royal Society,Royal Society
@@ -444,7 +444,7 @@ holford.poems.xml,"Poems, 1811","Hodson, Margaret (Holford)",London,1811,G.verse
 holford.poems.xml,"Poems, 1811","Hodson, Margaret (Holford)",London,1811,G.verse,Ballantyne,Ballantyne
 holford.poems.xml,"Poems, 1811","Hodson, Margaret (Holford)",London,1811,G.verse,James Ballantyne and Co,James Ballantyne and Co
 holley.texas.xml,"Texas, 1831","Holley, Mary Austin",Baltimore,1833,G.non-fiction,London Geographical Society,London Geographical Society
-holley.texas.xml,"Texas, 1831","Holley, Mary Austin",Baltimore,1833,G.non-fiction,Congress,Congress
+holley.texas.xml,"Texas, 1831","Holley, Mary Austin",Baltimore,1833,G.non-fiction,Congress,Congress of the United States
 holley.texas.xml,"Texas, 1831","Holley, Mary Austin",Baltimore,1833,G.non-fiction,District Court of Maryland,District Court of Maryland
 holley.texas.xml,"Texas, 1831","Holley, Mary Austin",Baltimore,1833,G.non-fiction,Yale College,Yale College
 holley.texas.xml,"Texas, 1831","Holley, Mary Austin",Baltimore,1833,G.non-fiction,Mexican Congress,Mexican Congress
@@ -478,7 +478,7 @@ jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",O
 jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,Hertford Coll,Hertford Coll
 jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,Christ Church,Christ Church
 jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,St John's Coll,St John's Coll
-jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,Oxford,Oxford
+jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,Oxford,University of Oxford
 jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,St David's,St David's
 jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,All Souls Coll,All Souls Coll
 jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,Magdalen Coll,Magdalen Coll
@@ -512,7 +512,7 @@ jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",O
 jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,Exeter College,Exeter College
 jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,St Paul's,St Paul's
 jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,Eton School,Eton School
-jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,Parliament,Parliament
+jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,Parliament,British Parliament
 jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,Christ Ch,Christ Church
 jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,Pembroke Hall,Pembroke Hall
 jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,the Imprest,the Imprest
@@ -522,7 +522,7 @@ jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",O
 jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,Magdalen College,Magdalen College
 jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,CC Coll,CC Coll
 jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,Westminster school,Westminster school
-jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,Parliament's,Parliament
+jones-m.miscellanies.xml,"Miscellanies in Prose and Verse, 1750","Jones, Mary",Oxford,1750,G.verse,Parliament's,British Parliament
 judson.account.xml,"Account of the American Baptist Mission to the Burman Empire, 1827","Judson, Ann H.",London,1827,G.non-fiction.letter,American Board of Baptist Missions,American Board of Baptist Missions
 judson.account.xml,"Account of the American Baptist Mission to the Burman Empire, 1827","Judson, Ann H.",London,1827,G.non-fiction.letter,Board of Managers of the General Convention,Board of Managers of the General Convention
 judson.account.xml,"Account of the American Baptist Mission to the Burman Empire, 1827","Judson, Ann H.",London,1827,G.non-fiction.letter,London Missionary Society,London Missionary Society
@@ -594,7 +594,7 @@ lee.life.xml,"The Life and Religious Experience of Jarena Lee, 1836","Lee, Jaren
 lennox.eliza02.xml,"The History of Eliza (vol. 2), 1767","Lennox, Charlotte (Ramsay)",London,1767,G.fiction,East India Company,East India Company
 lennox.museum.xml,"The Lady's Museum, 1760-61","Lennox, Charlotte (Ramsay)",London,1760-1761,G.non-fiction.essay,Salviati,Salviati
 lickbarrow.effusions.xml,"Poetical Effusions, 1814","Lickbarrow, Isabella",Kendal,1814,G.verse,Westmorland Advertiser Office,Westmorland Advertiser Office
-lilburne.knights.xml,"To the Chosen and Betrusted Knights, 1646","Lilburne, Elizabeth",London,1646,G.non-fiction,Parliament,Parliament
+lilburne.knights.xml,"To the Chosen and Betrusted Knights, 1646","Lilburne, Elizabeth",London,1646,G.non-fiction,Parliament,British Parliament
 lilburne.knights.xml,"To the Chosen and Betrusted Knights, 1646","Lilburne, Elizabeth",London,1646,G.non-fiction,Commons of England,Commons of England
 little.poeticalworks.xml,"The Poetical Works of Janet Little, The Scotch Milkmaid, 1792","Little, Janet",Air,1792,G.verse.lyric,Stationers' Hall,Stationers' Hall
 little.poeticalworks.xml,"The Poetical Works of Janet Little, The Scotch Milkmaid, 1792","Little, Janet",Air,1792,G.verse.lyric,Union Bank,Union Bank
@@ -603,13 +603,13 @@ little.poeticalworks.xml,"The Poetical Works of Janet Little, The Scotch Milkmai
 little.poeticalworks.xml,"The Poetical Works of Janet Little, The Scotch Milkmaid, 1792","Little, Janet",Air,1792,G.verse.lyric,Royal Navy,Royal Navy
 little.poeticalworks.xml,"The Poetical Works of Janet Little, The Scotch Milkmaid, 1792","Little, Janet",Air,1792,G.verse.lyric,Dr Jeffery's College,Dr Jeffery's College
 locke.markes.xml,"Of the Marks of the Children of God (Dedicatory Epistle), 1590","Locke, Anne (Vaughan)",London,1590,G.non-fiction,Church of God,Church of God
-love.name1651.xml,"Love's Name Lives, 1651","Love, Mary (Stone)",London,1651,G.non-fiction,Parliament,Parliament
+love.name1651.xml,"Love's Name Lives, 1651","Love, Mary (Stone)",London,1651,G.non-fiction,Parliament,British Parliament
 love.name1651.xml,"Love's Name Lives, 1651","Love, Mary (Stone)",London,1651,G.non-fiction,Parliament of the Common-Wealth,Parliament of the Common-Wealth
 love.name1651.xml,"Love's Name Lives, 1651","Love, Mary (Stone)",London,1651,G.non-fiction,Common-wealth,Common Wealth
 love.name1651.xml,"Love's Name Lives, 1651","Love, Mary (Stone)",London,1651,G.non-fiction,Government,Government
 love.name1651.xml,"Love's Name Lives, 1651","Love, Mary (Stone)",London,1651,G.non-fiction,Common- wealth,Common Wealth
 love.name1651.xml,"Love's Name Lives, 1651","Love, Mary (Stone)",London,1651,G.non-fiction,Common Wealth,Common Wealth
-love.name1663.xml,"Love's Name Lives, 1663","Love, Mary (Stone)",London,1663,G.non-fiction,Parliament,Parliament
+love.name1663.xml,"Love's Name Lives, 1663","Love, Mary (Stone)",London,1663,G.non-fiction,Parliament,British Parliament
 love.name1663.xml,"Love's Name Lives, 1663","Love, Mary (Stone)",London,1663,G.non-fiction,High Court of Justice,High Court of Justice
 morton.ouabi.xml,"Ouabi, 1790","Morton, Sarah Wentworth",Boston,1790,G.verse,American Academy of Arts and Sciences,American Academy of Arts and Sciences
 murray.gleaner.xml,"The Gleaner, 1798","Murray, Judith (Sargent)",Boston,1798,G.non-fiction.essay,Treasury of the United States,Treasury of the United States
@@ -619,31 +619,31 @@ murray.gleaner.xml,"The Gleaner, 1798","Murray, Judith (Sargent)",Boston,1798,G.
 murray.gleaner.xml,"The Gleaner, 1798","Murray, Judith (Sargent)",Boston,1798,G.non-fiction.essay,Royal Arch,Royal Arch
 murray.gleaner.xml,"The Gleaner, 1798","Murray, Judith (Sargent)",Boston,1798,G.non-fiction.essay,The Congress,The Congress
 murray.gleaner.xml,"The Gleaner, 1798","Murray, Judith (Sargent)",Boston,1798,G.non-fiction.essay,the Congress,the Congress
-murray.gleaner.xml,"The Gleaner, 1798","Murray, Judith (Sargent)",Boston,1798,G.non-fiction.essay,Senate,Senate
+murray.gleaner.xml,"The Gleaner, 1798","Murray, Judith (Sargent)",Boston,1798,G.non-fiction.essay,Senate,United States Senate
 murray.gleaner.xml,"The Gleaner, 1798","Murray, Judith (Sargent)",Boston,1798,G.non-fiction.essay,The Hibernian Society,The Hibernian Society
 murray.gleaner.xml,"The Gleaner, 1798","Murray, Judith (Sargent)",Boston,1798,G.non-fiction.essay,Free Masons,Free Masons
 murray.gleaner.xml,"The Gleaner, 1798","Murray, Judith (Sargent)",Boston,1798,G.non-fiction.essay,The Progressive Society,The Progressive Society
 nooth.poemsplay.xml,"Original Poems and a Play, 1815","Nooth, Charlotte",London,1815,G.drama.mixed,Longman Hurst Rees Orme & Brown,Longman Hurst Rees Orme & Brown
-oneill.poetical.xml,"Poetical Essays; Being a Collection of Satirical Poems, Songs and Acrostics, 1802","O'Neill, Frances (Carroll)",London,1802,G.verse,Parliament,Parliament
+oneill.poetical.xml,"Poetical Essays; Being a Collection of Satirical Poems, Songs and Acrostics, 1802","O'Neill, Frances (Carroll)",London,1802,G.verse,Parliament,British Parliament
 osborn.letters.xml,"Familiar Letters, 1807","Osborn, Sarah (Haggar)","Newport, RI",1807,G.non-fiction,the Female Society,the Female Society
-osborn.letters.xml,"Familiar Letters, 1807","Osborn, Sarah (Haggar)","Newport, RI",1807,G.non-fiction,Congress,Congress
+osborn.letters.xml,"Familiar Letters, 1807","Osborn, Sarah (Haggar)","Newport, RI",1807,G.non-fiction,Congress,Congress of the United States
 osborn.letters.xml,"Familiar Letters, 1807","Osborn, Sarah (Haggar)","Newport, RI",1807,G.non-fiction,The Newport Mercury,The Newport Mercury
-owen.antipurg.xml,"An Antidote Against Purgatory, 1634","Owen, Jane",Saint-Omer,1634,G.non-fiction,Catholike Churches,Catholike church
-owen.antipurg.xml,"An Antidote Against Purgatory, 1634","Owen, Jane",Saint-Omer,1634,G.non-fiction,Catholike Church,Catholike church
+owen.antipurg.xml,"An Antidote Against Purgatory, 1634","Owen, Jane",Saint-Omer,1634,G.non-fiction,Catholike Churches,Catholic Church
+owen.antipurg.xml,"An Antidote Against Purgatory, 1634","Owen, Jane",Saint-Omer,1634,G.non-fiction,Catholike Church,Catholic Church
 owenson.irishharp.xml,"The Lay of an Irish Harp, 1807","Owenson, Sydney",London,1807,G.verse.lyric,T Bensley,T Bensley
 owenson.poems.xml,"Poems, 1801","Owenson, Sydney",Dublin and London,1801,G.verse,Northampton regt,Northampton regt
 owenson.poems.xml,"Poems, 1801","Owenson, Sydney",Dublin and London,1801,G.verse,do,do
 owenson.poems.xml,"Poems, 1801","Owenson, Sydney",Dublin and London,1801,G.verse,68th regt,69th regt
 owenson.poems.xml,"Poems, 1801","Owenson, Sydney",Dublin and London,1801,G.verse,Cambridge cavalry,Cambridge cavalry
 owenson.poems.xml,"Poems, 1801","Owenson, Sydney",Dublin and London,1801,G.verse,60th regt,61st regt
-owenson.poems.xml,"Poems, 1801","Owenson, Sydney",Dublin and London,1801,G.verse,Northamp—”ton regt,Northamp—”ton regt
-parr-s.apologie.xml,"Susanna's Apology Against the Elders, 1659","Parr, Susanna",Oxford,1659,G.non-fiction,Parliament,Parliament
-philips.letters.xml,"Letters From Orinda to Poliarchus, 1705","Philips, Katherine (Fowler)",London,1705,G.non-fiction.letter,Parliament,Parliament
+owenson.poems.xml,"Poems, 1801","Owenson, Sydney",Dublin and London,1801,G.verse,Northampton regt,Northampton regt
+parr-s.apologie.xml,"Susanna's Apology Against the Elders, 1659","Parr, Susanna",Oxford,1659,G.non-fiction,Parliament,British Parliament
+philips.letters.xml,"Letters From Orinda to Poliarchus, 1705","Philips, Katherine (Fowler)",London,1705,G.non-fiction.letter,Parliament,British Parliament
 plato.essays.xml,"Essays, 1841","Plato, Ann",Hartford,1841,G.non-fiction,Royal Society,Royal Society
 plato.essays.xml,"Essays, 1841","Plato, Ann",Hartford,1841,G.non-fiction,Church of Christ,Christ Church
-poole.vision.xml,"A Vision, 1648","Poole, Elizabeth",London,1648,G.non-fiction,Parliament,Parliament
-primrose.chaine.xml,"A Chain of Pearl, 1630","Primrose, Diana",London,1630,G.verse,Parliaments,Parliament
-prince.narrativelife.xml,"A Narrative of the Life and Travels of Mrs. Nancy Prince, 1850","Prince, Nancy (Gardener)",Boston,1850,G.non-fiction,Congress,Congress
+poole.vision.xml,"A Vision, 1648","Poole, Elizabeth",London,1648,G.non-fiction,Parliament,British Parliament
+primrose.chaine.xml,"A Chain of Pearl, 1630","Primrose, Diana",London,1630,G.verse,Parliaments,British Parliament
+prince.narrativelife.xml,"A Narrative of the Life and Travels of Mrs. Nancy Prince, 1850","Prince, Nancy (Gardener)",Boston,1850,G.non-fiction,Congress,Congress of the United States
 prince.narrativelife.xml,"A Narrative of the Life and Travels of Mrs. Nancy Prince, 1850","Prince, Nancy (Gardener)",Boston,1850,G.non-fiction,District court of Massachusetts,District court of Massachusetts
 prince.narrativelife.xml,"A Narrative of the Life and Travels of Mrs. Nancy Prince, 1850","Prince, Nancy (Gardener)",Boston,1850,G.non-fiction,Mico Institution,Mico Institution
 prince.narrativelife.xml,"A Narrative of the Life and Travels of Mrs. Nancy Prince, 1850","Prince, Nancy (Gardener)",Boston,1850,G.non-fiction,Mico,Mico
@@ -670,9 +670,9 @@ rowson.present.xml,"A Present for Young Ladies, 1811","Rowson, Susanna (Haswell)
 rowson.present.xml,"A Present for Young Ladies, 1811","Rowson, Susanna (Haswell)",Boston,1811,G.non-fiction.other,Christ College,Christ College
 rowson.present.xml,"A Present for Young Ladies, 1811","Rowson, Susanna (Haswell)",Boston,1811,G.non-fiction.other,British Museum,British Museum
 rowson.present.xml,"A Present for Young Ladies, 1811","Rowson, Susanna (Haswell)",Boston,1811,G.non-fiction.other,university of Cambridge,University of Cambridge
-rowson.present.xml,"A Present for Young Ladies, 1811","Rowson, Susanna (Haswell)",Boston,1811,G.non-fiction.other,Oxford,Oxford
+rowson.present.xml,"A Present for Young Ladies, 1811","Rowson, Susanna (Haswell)",Boston,1811,G.non-fiction.other,Oxford,University of Oxford
 rowson.present.xml,"A Present for Young Ladies, 1811","Rowson, Susanna (Haswell)",Boston,1811,G.non-fiction.other,British parliament,British Parliament
-royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Congress,Congress
+royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Congress,Congress of the United States
 royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,House of Representatives,House of Representatives
 royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,District Court for the District of Columbia,District Court for the District of Columbia
 royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Congress of the United States,Congress of the United States
@@ -683,7 +683,7 @@ royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washingt
 royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Council,Council
 royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Grand Jury,Grand Jury
 royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Committee of Arrangements,Committee of Arrangements
-royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Senate,Senate
+royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Senate,United States Senate
 royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Supreme Court,Supreme Court
 royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Cabinet,Cabinet
 royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Department of State,Department of State
@@ -717,14 +717,14 @@ royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washingt
 royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Sisters of Charity,Sisters of Charity
 royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Navy Yard,Navy Yard
 royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Theological School of New Jersey,Theological School of New Jersey
-royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,United States' Senate of the Twentieth Congress,United States' Senate of the Twentieth Congress
+royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,United States' Senate of the Twentieth Congress,United States Senate
 royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,House of Representatives of the Twentieth Congress,House of Representatives of the Twentieth Congress
 royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Post Office Department,Post Office Department
-royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Twenty-first Congress—”Senate,Twenty-first Congress—”Senate
+royall.alabama.xml,"Letters from Alabama, 1830","Royall, Anne Newport","Washington, DC",1830,G.non-fiction,Twenty-first CongressSenate,United States Senate
 ryves.hastiniad.xml,"The Hastiniad, 1784","Ryves, Eliza",London,1785,G.verse,House of Commons,House of Commons
-sanders.aborigine.xml,"Conversations Principally on the Aborigines of North America, 1829","Sanders, Elizabeth Elkins","Salem, Massachusetts",1829,G.non-fiction,Senate,Senate
+sanders.aborigine.xml,"Conversations Principally on the Aborigines of North America, 1829","Sanders, Elizabeth Elkins","Salem, Massachusetts",1829,G.non-fiction,Senate,United States Senate
 sanders.aborigine.xml,"Conversations Principally on the Aborigines of North America, 1829","Sanders, Elizabeth Elkins","Salem, Massachusetts",1829,G.non-fiction,New York Historical Society,New York Historical Society
-sanders.aborigine.xml,"Conversations Principally on the Aborigines of North America, 1829","Sanders, Elizabeth Elkins","Salem, Massachusetts",1829,G.non-fiction,Congress,Congress
+sanders.aborigine.xml,"Conversations Principally on the Aborigines of North America, 1829","Sanders, Elizabeth Elkins","Salem, Massachusetts",1829,G.non-fiction,Congress,Congress of the United States
 sanders.aborigine.xml,"Conversations Principally on the Aborigines of North America, 1829","Sanders, Elizabeth Elkins","Salem, Massachusetts",1829,G.non-fiction,Tsalagi,Tsalagi
 sanders.aborigine.xml,"Conversations Principally on the Aborigines of North America, 1829","Sanders, Elizabeth Elkins","Salem, Massachusetts",1829,G.non-fiction,Tinilawiga,Tinilawiga
 sanders.aborigine.xml,"Conversations Principally on the Aborigines of North America, 1829","Sanders, Elizabeth Elkins","Salem, Massachusetts",1829,G.non-fiction,Timilawiga,Timilawiga
@@ -735,7 +735,7 @@ scott.advocate.xml,"The Female Advocate, 1774","Scott, Mary",London,1774,G.verse
 scott.advocate.xml,"The Female Advocate, 1774","Scott, Mary",London,1774,G.verse,St Andrew's,St Andrew's
 scott.advocate.xml,"The Female Advocate, 1774","Scott, Mary",London,1774,G.verse,St Mary Bredman's,St Mary Bredman's
 scott.advocate.xml,"The Female Advocate, 1774","Scott, Mary",London,1774,G.verse,Cathedral at Canterbury,Cathedral at Canterbury
-sigourney.aborigines.xml,"Traits of the Aborigines of America, 1822","Sigourney, Lydia Howard","Cambridge, Massachusetts",1822,G.verse,Congress,Congress
+sigourney.aborigines.xml,"Traits of the Aborigines of America, 1822","Sigourney, Lydia Howard","Cambridge, Massachusetts",1822,G.verse,Congress,Congress of the United States
 sigourney.aborigines.xml,"Traits of the Aborigines of America, 1822","Sigourney, Lydia Howard","Cambridge, Massachusetts",1822,G.verse,American Bible Society,American Bible Society
 sigourney.aborigines.xml,"Traits of the Aborigines of America, 1822","Sigourney, Lydia Howard","Cambridge, Massachusetts",1822,G.verse,Church of Rome,Church of Rome
 sigourney.aborigines.xml,"Traits of the Aborigines of America, 1822","Sigourney, Lydia Howard","Cambridge, Massachusetts",1822,G.verse,Jesus College,Jesus College
@@ -757,7 +757,7 @@ sigourney.connecticut.xml,"Sketch of Connecticut, Forty Years Since, 1824","Sigo
 smith.conversations.xml,"Conversations Introducing Poetry, 1819","Smith, Charlotte (Turner)",London,1819,G.fiction,Winchester School,Winchester School
 smith.conversations.xml,"Conversations Introducing Poetry, 1819","Smith, Charlotte (Turner)",London,1819,G.fiction,Eton College,Eton College
 smith.desmond.xml,"Desmond, 1792","Smith, Charlotte (Turner)",Dublin,1792,G.fiction.novel,Inquisition,Inquisition
-smith.desmond.xml,"Desmond, 1792","Smith, Charlotte (Turner)",Dublin,1792,G.fiction.novel,Parliament,Parliament
+smith.desmond.xml,"Desmond, 1792","Smith, Charlotte (Turner)",Dublin,1792,G.fiction.novel,Parliament,British Parliament
 smith.desmond.xml,"Desmond, 1792","Smith, Charlotte (Turner)",Dublin,1792,G.fiction.novel,House of Commons,House of Commons
 smith.desmond.xml,"Desmond, 1792","Smith, Charlotte (Turner)",Dublin,1792,G.fiction.novel,National Assembly,National Assembly
 smith.desmond.xml,"Desmond, 1792","Smith, Charlotte (Turner)",Dublin,1792,G.fiction.novel,National Assembly of France,National Assembly of France
@@ -765,25 +765,25 @@ smith.desmond.xml,"Desmond, 1792","Smith, Charlotte (Turner)",Dublin,1792,G.fict
 smith.desmond.xml,"Desmond, 1792","Smith, Charlotte (Turner)",Dublin,1792,G.fiction.novel,British senate,British senate
 smith.desmond.xml,"Desmond, 1792","Smith, Charlotte (Turner)",Dublin,1792,G.fiction.novel,Capuchins,Capuchins
 smith.desmond.xml,"Desmond, 1792","Smith, Charlotte (Turner)",Dublin,1792,G.fiction.novel,British parliment,British Parliament
-smith.desmond.xml,"Desmond, 1792","Smith, Charlotte (Turner)",Dublin,1792,G.fiction.novel,parliament,Parliament
-smith.emigrants.xml,"The Emigrants, 1793","Smith, Charlotte (Turner)",London,1793,G.verse.other,Parliament of England,Parliament of England
-smith.manor.xml,"The Old Manor House, 1793","Smith, Charlotte (Turner)",London,1793,G.fiction,Oxford,Oxford
+smith.desmond.xml,"Desmond, 1792","Smith, Charlotte (Turner)",Dublin,1792,G.fiction.novel,parliament,British Parliament
+smith.emigrants.xml,"The Emigrants, 1793","Smith, Charlotte (Turner)",London,1793,G.verse.other,Parliament of England,British Parliament
+smith.manor.xml,"The Old Manor House, 1793","Smith, Charlotte (Turner)",London,1793,G.fiction,Oxford,University of Oxford
 smith.manor.xml,"The Old Manor House, 1793","Smith, Charlotte (Turner)",London,1793,G.fiction,East India,East India
 smith.manor.xml,"The Old Manor House, 1793","Smith, Charlotte (Turner)",London,1793,G.fiction,Church of England,Church of England
 smith.manor.xml,"The Old Manor House, 1793","Smith, Charlotte (Turner)",London,1793,G.fiction,War Office,War Office
 smith.manor.xml,"The Old Manor House, 1793","Smith, Charlotte (Turner)",London,1793,G.fiction,British Government,British Government
-smith.manor.xml,"The Old Manor House, 1793","Smith, Charlotte (Turner)",London,1793,G.fiction,Congress,Congress
+smith.manor.xml,"The Old Manor House, 1793","Smith, Charlotte (Turner)",London,1793,G.fiction,Congress,Congress of the United States
 smith.manor.xml,"The Old Manor House, 1793","Smith, Charlotte (Turner)",London,1793,G.fiction,British Cabinet,British Cabinet
 smith.sonnets.xml,"Elegiac Sonnets, 1797","Smith, Charlotte (Turner)",London,1797,G.verse,Custom-House,Custom-House
 stagg.petition.xml,"A True Copy of the Petition, 1641","Stagg, Anne",London,1641,G.non-fiction,House of Commons,House of Commons
-stagg.petition.xml,"A True Copy of the Petition, 1641","Stagg, Anne",London,1641,G.non-fiction,Parliament,Parliament
+stagg.petition.xml,"A True Copy of the Petition, 1641","Stagg, Anne",London,1641,G.non-fiction,Parliament,British Parliament
 stewart.meditations.xml,"Meditations from the Pen of Mrs. Maria W. Stewart, 1832","Stewart, Maria W. (Miller)",Boston,1832,G.non-fiction,First African Baptist Church and Society,First African Baptist Church and Society
 tollet.poems.xml,"Poems on Several Occasions, with Anne Boleyn to Henry VIII, 1756","Tollet, Elizabeth",London,1756,G.verse,Cotton Library,Cotton Library
 trapnel.stone.xml,"The Cry of a Stone, 1654","Trapnel, Anna",London,1654,G.non-fiction,Vally of Vision,Vally of Vision
 trapnel.stone.xml,"The Cry of a Stone, 1654","Trapnel, Anna",London,1654,G.non-fiction,All-hallows,All-hallows
 trapnel.stone.xml,"The Cry of a Stone, 1654","Trapnel, Anna",London,1654,G.non-fiction,Church of All-hallows,Church of All-hallows
 trapnel.stone.xml,"The Cry of a Stone, 1654","Trapnel, Anna",London,1654,G.non-fiction,Presbyterian Government,Presbyterian Government
-trapnel.stone.xml,"The Cry of a Stone, 1654","Trapnel, Anna",London,1654,G.non-fiction,Parliament,Parliament
+trapnel.stone.xml,"The Cry of a Stone, 1654","Trapnel, Anna",London,1654,G.non-fiction,Parliament,British Parliament
 trapnel.stone.xml,"The Cry of a Stone, 1654","Trapnel, Anna",London,1654,G.non-fiction,Linsey-wolsey-Party,Linsey-wolsey-Party
 trapnel.stone.xml,"The Cry of a Stone, 1654","Trapnel, Anna",London,1654,G.non-fiction,National Clergy,National Clergy
 trench.thoughts.xml,"Thoughts of a Parent on Education, 1837","Trench, Melesina (Chenevix)",London,1837,G.non-fiction,Society of Friends,Society of Friends
@@ -791,11 +791,11 @@ trench.thoughts.xml,"Thoughts of a Parent on Education, 1837","Trench, Melesina 
 unknown.changingscenes.xml,"Changing Scenes, 1825",[unknown],New York,1825,G.fiction,Congress of the United States,Congress of the United States
 unknown.changingscenes.xml,"Changing Scenes, 1825",[unknown],New York,1825,G.fiction,Horticultural Society,Horticultural Society
 unknown.changingscenes.xml,"Changing Scenes, 1825",[unknown],New York,1825,G.fiction,Chemical Bank,Chemical Bank
-unknown.changingscenes.xml,"Changing Scenes, 1825",[unknown],New York,1825,G.fiction,congress,congress
-unknown.changingscenes.xml,"Changing Scenes, 1825",[unknown],New York,1825,G.fiction,Congress,Congress
+unknown.changingscenes.xml,"Changing Scenes, 1825",[unknown],New York,1825,G.fiction,congress,Congress of the United States
+unknown.changingscenes.xml,"Changing Scenes, 1825",[unknown],New York,1825,G.fiction,Congress,Congress of the United States
 unknown.changingscenes.xml,"Changing Scenes, 1825",[unknown],New York,1825,G.fiction,Merchants' Exchange,Merchants' Exchange
 unknown.changingscenes.xml,"Changing Scenes, 1825",[unknown],New York,1825,G.fiction,Academy of Arts,Academy of Arts
-unknown.memoir.xml,"Memoir of Mrs. Chloe Spear, 1832",[unknown],Boston,1832,G.non-fiction,Congress,Congress
+unknown.memoir.xml,"Memoir of Mrs. Chloe Spear, 1832",[unknown],Boston,1832,G.non-fiction,Congress,Congress of the United States
 unknown.memoir.xml,"Memoir of Mrs. Chloe Spear, 1832",[unknown],Boston,1832,G.non-fiction,Baptist Missionary Society,Baptist Missionary Society
 unknown.witchcrafts.xml,"The Wonderful Discoverie of the Witchcrafts of Margaret and Phillip Flower, 1619",[unknown],London,1619,G.non-fiction,Confederacy,Confederacy
 wakefield.mental.xml,"Mental Improvement, 1794","Wakefield, Priscilla",London,1794,G.non-fiction,British parliament,British Parliament

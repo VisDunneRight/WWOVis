@@ -10,9 +10,13 @@ var svgC = d3.select("#column-center")
   .attr('class','plot')
   .attr('transform','translate('+ m.l+','+ m.t +')');
 
+d3.select('#colC-title')
+  .style('width',wC + 'px');
+
 var col1 = wC/5,
   col2 = (wC/5)*4,
-  networkHeight = hC * 0.85;
+  networkHeight = hC * 0.85
+  clicked = 0;
 
 var curve = d3.line()
   .x(function(d){ return d.x})
@@ -73,8 +77,7 @@ dispatch.on("dataLoaded.network",function(allData){
   elemDistTop = allData.elemDistTop;
 
   // create text for elements
-  var ypos = 0,
-    clicked = 0;
+  var ypos = 0;
   var elemTopLength = elemTop.length;
 
   svgC.selectAll(".text-elem").remove();
@@ -93,7 +96,7 @@ dispatch.on("dataLoaded.network",function(allData){
     .attr("y",function(d){
       d.y = ypos;
       d.prop = d.value / elemTopLength;
-      position = ypos + 5 + (d.prop*networkHeight)/2;
+      position = ypos + 4 + (d.prop*networkHeight)/2;
       ypos += ((d.value / elemTopLength)*networkHeight) + 2;
       return position;
     })
@@ -140,7 +143,7 @@ dispatch.on("dataLoaded.network",function(allData){
     })
     .attr("y",function(d,i){
       d.y = (i+1)*(networkHeight/metaTopGenre.length);
-      return d.y+2;
+      return d.y+3;
     })
     .text(function(d){return d.key})
     .attr("font-family","sans-serif")
@@ -244,7 +247,7 @@ dispatch.on("highlightelem", function(d){
     .style("opacity",function(a){
       if (a[0].element == d.key){
         metaSet.add(a[0].mainGenre);
-        return .2;
+        return .15;
       }
       else { return 0; }
     });
@@ -283,7 +286,7 @@ dispatch.on("highlightmeta", function(d){
     .style("opacity",function(a){
       if (a[0].mainGenre == d.key){
         elemSet.add(a[0].element);
-        return .2;
+        return .15;
       }
       else { return 0; }
     });
@@ -322,7 +325,7 @@ dispatch.on("highlight.network",function(d){
       if (a[0].filename == d.filename){
         elemSet.add(a[0].element);
         metaSet.add(a[0].mainGenre);
-        return .2;
+        return .15;
       }
       else { return 0; }
     });
