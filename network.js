@@ -10,6 +10,9 @@ var svgC = d3.select("#column-center")
   .attr('class','plot')
   .attr('transform','translate('+ m.l+','+ m.t +')');
 
+d3.select('#colC-title')
+  .style('width',wC + 'px');
+
 var col1 = wC/5,
   col2 = (wC/5)*4,
   networkHeight = hC * 0.85
