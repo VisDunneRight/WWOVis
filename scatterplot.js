@@ -32,14 +32,14 @@ legend
 legend
   .append("text")
   .attr("id","legendTextFilled1")
-  .text("includes one of the")
+  .text("includes one of")
   .style("font-size", "8px")
   .style("fill", "#292826")
   .attr("text-anchor","middle");
 legend
   .append("text")
   .attr("id","legendTextFilled2")
-  .text("top 20 in-text elements")
+  .text("the top 20 names")
   .style("font-size", "8px")
   .style("fill", "#292826")
   .attr("text-anchor","middle");
@@ -47,14 +47,14 @@ legend
 legend
   .append("text")
   .attr("id","legendTextUnfilled1")
-  .text("doesn't include one of the")
+  .text("doesn't include one of")
   .style("font-size", "8px")
   .style("fill", "#292826")
   .attr("text-anchor","middle");
 legend
   .append("text")
   .attr("id","legendTextUnfilled2")
-  .text("top 20 in-text elements")
+  .text("the top 20 names")
   .style("font-size", "8px")
   .style("fill", "#292826")
   .attr("text-anchor","middle");
