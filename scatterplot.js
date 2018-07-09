@@ -32,14 +32,14 @@ legend
 legend
   .append("text")
   .attr("id","legendTextFilled1")
-  .text("includes one of the")
+  .text("includes one of")
   .style("font-size", "8px")
   .style("fill", "#292826")
   .attr("text-anchor","middle");
 legend
   .append("text")
   .attr("id","legendTextFilled2")
-  .text("top 20 in-text elements")
+  .text("the top 20 names")
   .style("font-size", "8px")
   .style("fill", "#292826")
   .attr("text-anchor","middle");
@@ -47,14 +47,14 @@ legend
 legend
   .append("text")
   .attr("id","legendTextUnfilled1")
-  .text("doesn't include one of the")
+  .text("doesn't include one of")
   .style("font-size", "8px")
   .style("fill", "#292826")
   .attr("text-anchor","middle");
 legend
   .append("text")
   .attr("id","legendTextUnfilled2")
-  .text("top 20 in-text elements")
+  .text("the top 20 names")
   .style("font-size", "8px")
   .style("fill", "#292826")
   .attr("text-anchor","middle");
@@ -88,20 +88,16 @@ var scaleY = d3.scaleTime()
   .domain([new Date(1500,0,1), new Date(1875,0,1)])
   .range([hL-40,0]);
 
-// var scaleColor = d3.scaleOrdinal()
-//       .domain(["Drama","Fiction","Non-fiction","Verse"])
-//       .range(["#EC407A", "#BA68C8", "#03A9F4", "#00E676"]);
-        // 400 pink, 300 purple, 500 light blue, A400 green
-
 var scaleColor = d3.scaleOrdinal()
-      .domain(["Drama","Fiction","Non-fiction","Verse"])
-      .range(["#C2185B", "#673AB7", "#00ACC1", "#43A047"]);
-        // 700 pink, 500 deep purple, 600 cyan, 600 green
+  .domain(["Drama","Fiction","Non-fiction","Verse"])
+  .range(["#C2185B", "#673AB7", "#00ACC1", "#43A047"]);
+  // 700 pink, 500 deep purple, 600 cyan, 600 green
 
 // domain for scatterplot
 var axisY = d3.axisLeft()
     .scale(scaleY)
     .ticks(d3.timeYear.every(50))
+    .tickFormat(d3.timeFormat("%Y"))
     .tickSize(0);
 
 var axisX = d3.axisTop()
@@ -117,16 +113,13 @@ svgL.append("g")
   .attr('class', 'axisColor')
   .call(axisY)
   .select(".domain")
-    .remove()
-  .selectAll("g.tick").select("text")
-    .attr("fill","red"); // doesn't work
+  .remove();
 
 svgL.append("g")
   .attr("id","axis-x")
   .attr("transform", "translate(10,10)")
   .attr("font-family","sans-serif")
   .attr("font-size","10px")
-  // .attr("fill",function(d){ scaleColor(d.genre) })
   .attr('class', 'axisColor')
   .call(axisX)
   .select(".domain")
@@ -134,7 +127,6 @@ svgL.append("g")
 
 var elemTopData;
 
-// dispatch.on("dataLoaded.scatterplot",function(meta, metaTop, metaTopGenre, elemDistTop, elemTop){
 dispatch.on("dataLoaded.scatterplot",function(allData){
   var meta = allData.meta,
   metaTop = allData.metaTop,
@@ -239,7 +231,6 @@ dispatch.on("dataLoaded.scatterplot",function(allData){
   // interactions
   dot
    .on("mouseenter",function(d){
-     // console.log(d.filename);
      var i = 1
       if(d.isTop == 1){
         dispatch.call("highlight",this,d,i);
