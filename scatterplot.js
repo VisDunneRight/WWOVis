@@ -200,7 +200,7 @@ dispatch.on("dataLoaded.scatterplot",function(allData){
         cxFilled = start.cx;
         return "M " + (start.cx-8) + " " + (start.cy) +
           " L " + (start.cx-28) + " " + (start.cy) +
-          " L " + (start.cx-28) + " 430";
+          " L " + (start.cx-28) + " 450";
       });
 
     svgL.select("#legendLineUnfilled")
@@ -209,24 +209,24 @@ dispatch.on("dataLoaded.scatterplot",function(allData){
         cxUnfilled = start.cx;
         return "M " + (start.cx+8) + " " + (start.cy) +
           " L " + (start.cx+18) + " " + (start.cy) +
-          " L " + (start.cx+18) + " 400";
+          " L " + (start.cx+18) + " 420";
       });
 
     svgL.select("#legendTextFilled1")
       .attr("x",cxFilled-28)
-      .attr("y",440);
+      .attr("y",460);
 
     svgL.select("#legendTextFilled2")
       .attr("x",cxFilled-28)
-      .attr("y",450);
+      .attr("y",470);
 
     svgL.select("#legendTextUnfilled1")
       .attr("x",cxUnfilled+18)
-      .attr("y",410);
+      .attr("y",430);
 
     svgL.select("#legendTextUnfilled2")
       .attr("x",cxUnfilled+18)
-      .attr("y",420);
+      .attr("y",440);
 
   // interactions
   dot
