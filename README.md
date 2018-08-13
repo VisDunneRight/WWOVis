@@ -4,7 +4,7 @@ This visualization represents the textbase of women writers online, a collection
 
 # Demo
 
-You can see a live demo at [www.wwp.northeastern.edu/wwo/lab/names-viz](https://www.wwp.northeastern.edu/wwo/lab/names-viz/index.html) and watch our demo video: 
+You can see a live demo at [www.wwp.northeastern.edu/wwo/lab/names-viz](https://www.wwp.northeastern.edu/wwo/lab/names-viz/index.html) or [visdunneright.github.io/WWOVis](https://visdunneright.github.io/WWOVis/) and watch our demo video: 
 
 TBD
 
