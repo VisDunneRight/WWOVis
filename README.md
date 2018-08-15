@@ -6,7 +6,7 @@ This visualization represents the textbase of women writers online, a collection
 
 You can see a live demo at [www.wwp.northeastern.edu/wwo/lab/names-viz](https://www.wwp.northeastern.edu/wwo/lab/names-viz/index.html) or [visdunneright.github.io/WWOVis](https://visdunneright.github.io/WWOVis/) and watch our demo video: 
 
-TBD
+[![WWOVis Demo Video](youtube_image.png)](https://www.youtube.com/watch?v=uGfDw5yK71w "WWOVis demo video")
 
 # Setup
 - Open terminal/command prompt.
@@ -14,7 +14,6 @@ TBD
 - Change to the public directory.
 - At the command line, run python -m http.server with the version Python 3. 
 - Visit [http://localhost:8000/](http://localhost:8000/) in your browser.
-
 
 # Publication 
 
