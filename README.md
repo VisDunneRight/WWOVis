@@ -17,7 +17,7 @@ You can see a live demo at [www.wwp.northeastern.edu/wwo/lab/names-viz](https://
 
 # Publication 
 
-Sarah Campbell, Zheng-yan Yu, Sarah Connell, and Cody Dunne, "Close and Distant Reading via Named Entity Network Visualization: A Case Study of Women Writers Online", Proc. 3rd Workshop on Visualization for the Digital Humanities. VIS4DH. 2018.
+Sarah Campbell, Zheng-yan Yu, Sarah Connell, and Cody Dunne, "[Close and Distant Reading via Named Entity Network Visualization: A Case Study of Women Writers Online](WWOVis_VIS4DH18_preprint.pdf)", Proc. 3rd Workshop on Visualization for the Digital Humanities. VIS4DH. 2018.
 
 # Authors
 [Sarah Campbell](https://www.linkedin.com/in/sarahlizcampbell/), [Zheng-yan Yu](https://noelfish6.github.io/), [Sarah Connell](https://library.northeastern.edu/about/library-staff-directory/sarah-connell), and [Cody Dunne](https://cody.ccis.northeastern.edu/)
